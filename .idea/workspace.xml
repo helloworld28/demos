@@ -1,0 +1,1905 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0ecfa2a0-f6f1-4978-814b-f18b8ade58c2" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="CodeIris Favorites" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Naming.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/rmi/Naming.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="32" column="75" lean-forward="false" selection-start-line="32" selection-start-column="75" selection-end-line="32" selection-end-column="75" />
+              <folding>
+                <element signature="e#0#12607#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObjID.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/rmi/server/ObjID.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2983">
+              <caret line="189" column="24" lean-forward="false" selection-start-line="189" selection-start-column="24" selection-end-line="189" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#8054#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#6544#6545#0" expanded="false" />
+                <element signature="e#6579#6580#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObjID.class" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/java/rmi/server/ObjID.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RemoteRef.java" pinned="false" current-in-tab="true">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/rmi/server/RemoteRef.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SocketInputStream.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/SocketInputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2432">
+              <caret line="158" column="30" lean-forward="false" selection-start-line="158" selection-start-column="30" selection-end-line="158" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#8214#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1710#1711#0" expanded="false" />
+                <element signature="e#1737#1738#0" expanded="false" />
+                <element signature="e#7967#7968#0" expanded="false" />
+                <element signature="e#7997#7998#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>charset</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cpm/grails-easyui" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/factory/NYStylePizza.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/factory/NYStyleCheesePizza.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/factory/ChicagoStyleCheesePizza.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/factory/PizzaStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/factory/NYPizzaStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/factory/ChicagoPizzaStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/factory/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/Singleton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/command/Command.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/command/Light.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/command/LightOnCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/command/LightOffCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/command/NoCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/command/RemoteControl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/command/CDPlayOnCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/command/CDPlayerOffCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/command/CDPlayer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/command/RemoteLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/template.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/template/Coffeee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/template/Tea.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/template/CaffeinBeverage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/template/Coffee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/template/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/MaopaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/iterator/MenuItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/iterator/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/iterator/MenuComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/iterator/CompositeIterator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/rmi/MyRemote.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/iterator/Menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/rmi/RMIServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/rmi/RMIClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/rmi/MyRemoteImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/proxy/PersonBeanImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/proxy/PersonBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/proxy/OwenerInvocationHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/proxy/NonOwenerInvocationHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/proxy/PersobBeanProxyFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/proxy/MatchMakingTestDrive.java" />
+        <option value="$PROJECT_DIR$/target/classes/com/jim/java8/EnumDemo.class" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/SingletonInner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/EnumDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/BitVetory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/FileReadTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/FileClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/ClassLoaderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/PipeLIneTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/completefuture/Shop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jim/java8/SocketTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="java8" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="java8" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="54" />
+    <option name="y" value="-8" />
+    <option name="width" value="1554" />
+    <option name="height" value="916" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="D:/" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jim.java8.proxy" />
+      <recent name="com.jim.java8.rmi" />
+      <recent name="com.jim.java8" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\projects\src\main\java\com\jim\java8\example" />
+      <recent name="D:\work\projects\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.SocketTest">
+    <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.jim.java8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.jim.java8.Test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="projects" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ClassLoaderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.jim.java8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.jim.java8.ClassLoaderTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="projects" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="PipeLIneTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.jim.java8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.jim.java8.PipeLIneTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="projects" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Shop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.jim.java8.completefuture.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.jim.java8.completefuture.Shop" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="projects" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SocketTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.jim.java8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.jim.java8.SocketTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="projects" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="projects" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ClassLoaderTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.PipeLIneTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Shop" />
+      <item index="4" class="java.lang.String" itemvalue="Application.SocketTest" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.SocketTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Shop" />
+        <item index="2" class="java.lang.String" itemvalue="Application.PipeLIneTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ClassLoaderTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ecfa2a0-f6f1-4978-814b-f18b8ade58c2" name="Default" comment="" />
+      <created>1499760966716</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1499760966716</updated>
+      <workItem from="1499760969750" duration="1549000" />
+      <workItem from="1500342959988" duration="3536000" />
+      <workItem from="1500362702560" duration="4776000" />
+      <workItem from="1500430485470" duration="1417000" />
+      <workItem from="1500432089133" duration="1771000" />
+      <workItem from="1500433938123" duration="3841000" />
+      <workItem from="1500689635333" duration="5020000" />
+      <workItem from="1500862935978" duration="1904000" />
+      <workItem from="1501741075671" duration="8084000" />
+      <workItem from="1503304810470" duration="308000" />
+      <workItem from="1507785087017" duration="916000" />
+      <workItem from="1509519349971" duration="12486000" />
+      <workItem from="1509676462831" duration="10014000" />
+      <workItem from="1510576633457" duration="3140000" />
+      <workItem from="1510727643414" duration="7780000" />
+      <workItem from="1511160341097" duration="1433000" />
+      <workItem from="1511162424034" duration="4796000" />
+      <workItem from="1512451680319" duration="32000" />
+      <workItem from="1513781029585" duration="6645000" />
+      <workItem from="1515463199736" duration="2601000" />
+      <workItem from="1516357585449" duration="941000" />
+      <workItem from="1516786271694" duration="1910000" />
+      <workItem from="1518252224004" duration="2353000" />
+      <workItem from="1518256335290" duration="270000" />
+      <workItem from="1518256668014" duration="10211000" />
+      <workItem from="1518510166138" duration="49000" />
+      <workItem from="1519436903246" duration="621000" />
+      <workItem from="1519609408772" duration="72000" />
+      <workItem from="1521187604720" duration="1218000" />
+      <workItem from="1521275628112" duration="2846000" />
+      <workItem from="1521281695758" duration="775000" />
+      <workItem from="1521536170673" duration="2503000" />
+      <workItem from="1524296112635" duration="3685000" />
+      <workItem from="1524448612448" duration="230000" />
+      <workItem from="1525849447570" duration="7197000" />
+      <workItem from="1526003617799" duration="8125000" />
+      <workItem from="1526694903685" duration="6101000" />
+      <workItem from="1526717473213" duration="2340000" />
+      <workItem from="1526867061654" duration="10921000" />
+      <workItem from="1527319032929" duration="824000" />
+      <workItem from="1528949018595" duration="11061000" />
+      <workItem from="1530080362658" duration="6432000" />
+      <workItem from="1530095566626" duration="628000" />
+      <workItem from="1530096276680" duration="83000" />
+      <workItem from="1530152305387" duration="1541000" />
+      <workItem from="1530587489597" duration="124000" />
+      <workItem from="1532335680277" duration="2296000" />
+      <workItem from="1533363738424" duration="525000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="167931000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="54" y="-8" width="1554" height="916" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299866" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4033264" sideWeight="0.50441015" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24096386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24966533" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41048592" sideWeight="0.49558985" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="UML Diagrams" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32736573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Graphical Navigator" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.6506024" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jim/java8/socket/EchoServer.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jim/java8/ReduceTest.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/target/classes/com/jim/java8/EnumDemo.class</url>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="7" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jim/java8/CollectorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="35" column="79" lean-forward="false" selection-start-line="35" selection-start-column="79" selection-end-line="35" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jim/java8/DataConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jim/java8/EnumDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jim/java8/FileReadTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="30" column="9" lean-forward="false" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6916">
+          <caret line="427" column="78" lean-forward="false" selection-start-line="427" selection-start-column="60" selection-end-line="427" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jim/java8/FileClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/jim/java8/test5/Test.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jim/java8/ClassLoaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jim/java8/PipeLIneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jim/java8/completefuture/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/rmi/Remote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="49" column="17" lean-forward="false" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/java/util/Collections.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/server/WeakClassHashMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/transport/Endpoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/transport/Transport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="83" column="44" lean-forward="false" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/transport/StreamRemoteCall.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="29" column="11" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/transport/ObjectTable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/transport/tcp/TCPTransport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="284" column="39" lean-forward="false" selection-start-line="284" selection-start-column="39" selection-end-line="284" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/transport/Target.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="37" column="11" lean-forward="false" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/rmi/server/RemoteCall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="104" column="54" lean-forward="false" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/server">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/server</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="579.0" y="365.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/sun.rmi.transport.LiveRef">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>sun.rmi.transport.LiveRef</OriginalElement>
+          <nodes>
+            <node x="" y="">java.lang.Cloneable</node>
+            <node x="" y="">sun.rmi.transport.LiveRef</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="230.0" y="152.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Inner Classes</Category>
+            <Category>Properties</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/sun.rmi.server">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>sun.rmi.server</OriginalElement>
+          <nodes>
+            <node x="" y="">sun.rmi.server.UnicastRef2</node>
+            <node x="" y="">sun.rmi.server.MarshalInputStream</node>
+            <node x="" y="">sun.rmi.server.UnicastServerRef</node>
+            <node x="" y="">sun.rmi.server.UnicastRef</node>
+            <node x="" y="">sun.rmi.server.DeserializationChecker</node>
+            <node x="" y="">sun.rmi.server.ActivationGroupInit</node>
+            <node x="" y="">sun.rmi.server.ActivatableServerRef</node>
+            <node x="" y="">sun.rmi.server.MarshalOutputStream</node>
+            <node x="" y="">sun.rmi.server.resources</node>
+            <node x="" y="">sun.rmi.server.WeakClassHashMap</node>
+            <node x="" y="">sun.rmi.server.Activation$ActivationSystemImpl_Stub</node>
+            <node x="" y="">sun.rmi.server.Dispatcher</node>
+            <node x="" y="">sun.rmi.server.ActivatableRef</node>
+            <node x="" y="">sun.rmi.server.LoaderHandler</node>
+            <node x="" y="">sun.rmi.server.PipeWriter</node>
+            <node x="" y="">sun.rmi.server.Util</node>
+            <node x="" y="">sun.rmi.server.Activation</node>
+            <node x="" y="">sun.rmi.server.ActivationGroupImpl</node>
+            <node x="" y="">sun.rmi.server.UnicastServerRef2</node>
+            <node x="" y="">sun.rmi.server.InactiveGroupException</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="307.0" y="323.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/transport/LiveRef.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/server/UnicastServerRef2.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/server/UnicastServerRef.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="101" column="18" lean-forward="false" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/registry/RegistryImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="106" column="9" lean-forward="true" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/sun.rmi.registry">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>sun.rmi.registry</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">sun.rmi.registry.RegistryImpl</node>
+            <node x="0.0" y="426.0">sun.rmi.registry.resources</node>
+            <node x="0.0" y="305.0">sun.rmi.registry.RegistryImpl_Stub</node>
+            <node x="267.0" y="305.0">sun.rmi.registry.RegistryImpl_Skel</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-263.0" y="223.0" />
+          <SelectedNodes>
+            <node>sun.rmi.registry.RegistryImpl</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/rmi/registry/Registry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="126" column="30" lean-forward="true" selection-start-line="126" selection-start-column="30" selection-end-line="126" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jim/java8/rmi/RMIServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="17" column="62" lean-forward="false" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jim/java8/rmi/MyRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jim/java8/rmi/RMIClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="16" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/rmi/server/UnicastRemoteObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5529">
+          <caret line="316" column="25" lean-forward="false" selection-start-line="316" selection-start-column="25" selection-end-line="316" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/java.rmi.server">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.rmi.server</OriginalElement>
+          <nodes>
+            <node x="732.0" y="0.0">java.rmi.server.LogStream</node>
+            <node x="987.0" y="948.0">java.rmi.server.Operation</node>
+            <node x="500.0" y="724.0">java.rmi.server.RMIClassLoader</node>
+            <node x="260.0" y="724.0">java.rmi.server.ExportException</node>
+            <node x="0.0" y="948.0">java.rmi.server.SkeletonNotFoundException</node>
+            <node x="512.0" y="948.0">java.rmi.server.ServerNotActiveException</node>
+            <node x="206.0" y="1046.0">java.rmi.server.RMIFailureHandler</node>
+            <node x="407.0" y="1046.0">java.rmi.server.Unreferenced</node>
+            <node x="235.0" y="126.0">java.rmi.server.RemoteObjectInvocationHandler</node>
+            <node x="10.0" y="850.0">java.rmi.server.ServerRef</node>
+            <node x="492.0" y="149.0">java.rmi.server.RemoteStub</node>
+            <node x="21.0" y="275.0">java.rmi.server.UnicastRemoteObject</node>
+            <node x="723.0" y="442.0">java.rmi.server.RMIServerSocketFactory</node>
+            <node x="366.0" y="442.0">java.rmi.server.UID</node>
+            <node x="0.0" y="137.5">java.rmi.server.RemoteServer</node>
+            <node x="260.0" y="827.0">java.rmi.server.SocketSecurityException</node>
+            <node x="267.5" y="0.0">java.rmi.server.RemoteObject</node>
+            <node x="754.0" y="948.0">java.rmi.server.LoaderHandler</node>
+            <node x="738.0" y="1046.0">java.rmi.server.Skeleton</node>
+            <node x="0.0" y="724.0">java.rmi.server.RemoteRef</node>
+            <node x="793.25" y="522.0">java.rmi.server.RMISocketFactory</node>
+            <node x="257.0" y="948.0">java.rmi.server.SkeletonMismatchException</node>
+            <node x="0.0" y="1046.0">java.rmi.server.RMIClassLoaderSpi</node>
+            <node x="579.0" y="1046.0">java.rmi.server.RemoteCall</node>
+            <node x="933.0" y="442.0">java.rmi.server.RMIClientSocketFactory</node>
+            <node x="839.0" y="724.0">java.rmi.server.ServerCloneException</node>
+            <node x="0.0" y="442.0">java.rmi.server.ObjID</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="java.rmi.server.UnicastRemoteObject" target="java.rmi.server.RemoteServer">
+              <point x="0.0" y="-61.0" />
+              <point x="0.0" y="38.0" />
+            </edge>
+            <edge source="java.rmi.server.RemoteStub" target="java.rmi.server.RemoteObject">
+              <point x="0.0" y="-26.5" />
+              <point x="589.5" y="101.0" />
+              <point x="410.83333333333337" y="101.0" />
+              <point x="57.33333333333337" y="38.0" />
+            </edge>
+            <edge source="java.rmi.server.RemoteObjectInvocationHandler" target="java.rmi.server.RemoteObject">
+              <point x="0.0" y="-49.5" />
+              <point x="0.0" y="38.0" />
+            </edge>
+            <edge source="java.rmi.server.RMISocketFactory" target="java.rmi.server.RMIServerSocketFactory">
+              <point x="-64.25" y="-49.5" />
+              <point x="857.5" y="497.0" />
+              <point x="818.0" y="497.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="java.rmi.server.SocketSecurityException" target="java.rmi.server.ExportException">
+              <point x="0.0" y="-26.5" />
+              <point x="0.0" y="26.5" />
+            </edge>
+            <edge source="java.rmi.server.ServerRef" target="java.rmi.server.RemoteRef">
+              <point x="0.0" y="-26.5" />
+              <point x="0.0" y="38.0" />
+            </edge>
+            <edge source="java.rmi.server.RemoteServer" target="java.rmi.server.RemoteObject">
+              <point x="0.0" y="-38.0" />
+              <point x="107.5" y="101.0" />
+              <point x="296.16666666666663" y="101.0" />
+              <point x="-57.33333333333334" y="38.0" />
+            </edge>
+            <edge source="java.rmi.server.RMISocketFactory" target="java.rmi.server.RMIClientSocketFactory">
+              <point x="64.25" y="-49.5" />
+              <point x="986.0" y="497.0" />
+              <point x="1025.5" y="497.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.6890243902439024" x="-6.0" y="39.0" />
+          <SelectedNodes>
+            <node>java.rmi.server.LogStream</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jim/java8/rmi/MyRemoteImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/transport/tcp/TCPEndpoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3838">
+          <caret line="235" column="29" lean-forward="false" selection-start-line="235" selection-start-column="29" selection-end-line="235" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/java.rmi">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.rmi</OriginalElement>
+          <nodes>
+            <node x="957.0" y="425.0">java.rmi.UnmarshalException</node>
+            <node x="1275.0" y="1745.0">java.rmi.RMISecurityManager</node>
+            <node x="186.5" y="2105.0">java.rmi.server.Operation</node>
+            <node x="1009.5" y="1505.0">java.rmi.ServerException</node>
+            <node x="894.0" y="785.0">java.rmi.server.SkeletonNotFoundException</node>
+            <node x="261.5" y="1985.0">java.rmi.server.ServerNotActiveException</node>
+            <node x="1082.0" y="1985.0">java.rmi.server.RMIFailureHandler</node>
+            <node x="-38.5" y="745.0">java.rmi.server.RemoteObjectInvocationHandler</node>
+            <node x="1336.5" y="1985.0">java.rmi.server.Unreferenced</node>
+            <node x="460.5" y="745.0">java.rmi.server.RemoteStub</node>
+            <node x="844.5" y="1985.0">java.rmi.MarshalledObject</node>
+            <node x="712.0" y="1745.0">java.rmi.server.RemoteObjectInvocationHandler.MethodToHash_Maps</node>
+            <node x="1197.5" y="-15.0">java.rmi.ConnectIOException</node>
+            <node x="-2.0" y="1985.0">java.rmi.NotBoundException</node>
+            <node x="906.0" y="1385.0">java.rmi.StubNotFoundException</node>
+            <node x="1205.5" y="1505.0">java.rmi.RemoteException</node>
+            <node x="-7.0" y="2105.0">java.rmi.Naming</node>
+            <node x="391.0" y="2105.0">java.rmi.server.Skeleton</node>
+            <node x="504.0" y="1865.0">java.rmi.server.RemoteRef</node>
+            <node x="690.0" y="865.0">java.rmi.activation</node>
+            <node x="1175.0" y="1625.0">java.rmi.server.SkeletonMismatchException</node>
+            <node x="583.0" y="2105.0">java.rmi.server.RemoteCall</node>
+            <node x="227.5" y="1745.0">java.rmi.server.RMIClientSocketFactory</node>
+            <node x="993.0" y="1745.0">java.rmi.server.ServerCloneException</node>
+            <node x="784.5" y="2105.0">java.rmi.server.LogStream</node>
+            <node x="1747.5" y="1505.0">java.rmi.UnknownHostException</node>
+            <node x="1466.5" y="1585.0">java.rmi.NoSuchObjectException</node>
+            <node x="1008.5" y="185.0">java.rmi.AccessException</node>
+            <node x="1022.5" y="305.0">java.rmi.ServerError</node>
+            <node x="1568.5" y="1985.0">java.rmi.server.RMIClassLoader</node>
+            <node x="969.0" y="1145.0">java.rmi.server.ExportException</node>
+            <node x="266.5" y="465.0">java.rmi.dgc</node>
+            <node x="508.0" y="1745.0">java.rmi.server.ServerRef</node>
+            <node x="433.5" y="865.0">java.rmi.server.UnicastRemoteObject</node>
+            <node x="1004.5" y="545.0">java.rmi.MarshalException</node>
+            <node x="-15.0" y="1865.0">java.rmi.server.RMIServerSocketFactory</node>
+            <node x="1005.0" y="2105.0">java.rmi.server.UID</node>
+            <node x="964.5" y="65.0">java.rmi.ConnectException</node>
+            <node x="273.5" y="625.0">java.rmi.Remote</node>
+            <node x="455.0" y="985.0">java.rmi.server.RemoteServer</node>
+            <node x="946.0" y="1265.0">java.rmi.server.SocketSecurityException</node>
+            <node x="254.5" y="745.0">java.rmi.server.RemoteObject</node>
+            <node x="1553.5" y="1745.0">java.rmi.RMISecurityException</node>
+            <node x="193.5" y="1065.0">java.rmi.UnexpectedException</node>
+            <node x="1812.5" y="1985.0">java.rmi.server.LoaderHandler</node>
+            <node x="906.0" y="665.0">java.rmi.ServerRuntimeException</node>
+            <node x="1867.0" y="1745.0">java.rmi.AlreadyBoundException</node>
+            <node x="3.5" y="1745.0">java.rmi.server.RMISocketFactory</node>
+            <node x="1095.0" y="2105.0">sun.rmi.transport.LiveRef</node>
+            <node x="55.5" y="625.0">java.rmi.registry</node>
+            <node x="559.5" y="1985.0">java.rmi.server.RMIClassLoaderSpi</node>
+            <node x="2079.0" y="1985.0">java.rmi.server.ObjID</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="java.rmi.activation" target="java.rmi.server.RemoteServer">
+              <point x="0.0" y="15.0" />
+              <point x="760.0" y="1000.0" />
+              <point x="65.0" y="-0.0" />
+            </edge>
+            <edge source="java.rmi.ConnectException" target="java.rmi.RemoteException">
+              <point x="75.5" y="-0.0" />
+              <point x="1276.3636363636363" y="80.0" />
+              <point x="-3.6363636363637397" y="-15.0" />
+            </edge>
+            <edge source="java.rmi.dgc" target="java.rmi.Remote">
+              <point x="0.0" y="15.0" />
+              <point x="0.0" y="-15.0" />
+            </edge>
+            <edge source="java.rmi.server.RemoteObjectInvocationHandler" target="java.rmi.server.RemoteObject">
+              <point x="118.5" y="-0.0" />
+              <point x="-65.5" y="-0.0" />
+            </edge>
+            <edge source="java.rmi.NoSuchObjectException" target="java.rmi.RemoteException">
+              <point x="0.0" y="-15.0" />
+              <point x="1560.0" y="1525.7142857142858" />
+              <point x="74.5" y="5.714285714285722" />
+            </edge>
+            <edge source="java.rmi.activation" target="java.rmi.server.RemoteStub">
+              <point x="-40.0" y="-15.0" />
+              <point x="720.0" y="760.0" />
+              <point x="59.5" y="-0.0" />
+            </edge>
+            <edge source="java.rmi.server.UnicastRemoteObject" target="java.rmi.server.RemoteServer">
+              <point x="0.0" y="15.0" />
+              <point x="0.0" y="-15.0" />
+            </edge>
+            <edge source="java.rmi.activation" target="java.rmi.RemoteException">
+              <point x="70.0" y="-0.0" />
+              <point x="1250.909090909091" y="880.0" />
+              <point x="-29.09090909090901" y="-15.0" />
+            </edge>
+            <edge source="java.rmi.server.RemoteObject" target="java.rmi.Remote">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="java.rmi.activation" target="java.rmi.Remote">
+              <point x="-20.0" y="-15.0" />
+              <point x="740.0" y="640.0" />
+              <point x="46.5" y="-0.0" />
+            </edge>
+            <edge source="java.rmi.server.SkeletonMismatchException" target="java.rmi.RemoteException">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="java.rmi.AccessException" target="java.rmi.RemoteException">
+              <point x="71.5" y="-0.0" />
+              <point x="1272.7272727272727" y="200.0" />
+              <point x="-7.272727272727252" y="-15.0" />
+            </edge>
+            <edge source="java.rmi.server.SkeletonNotFoundException" target="java.rmi.RemoteException">
+              <point x="106.0" y="-0.0" />
+              <point x="1254.5454545454545" y="800.0" />
+              <point x="-25.454545454545496" y="-15.0" />
+            </edge>
+            <edge source="java.rmi.server.RMISocketFactory" target="java.rmi.server.RMIClientSocketFactory">
+              <point x="76.5" y="-0.0" />
+              <point x="-92.5" y="-0.0" />
+            </edge>
+            <edge source="java.rmi.registry" target="java.rmi.Remote">
+              <point x="64.5" y="-0.0" />
+              <point x="-46.5" y="-0.0" />
+            </edge>
+            <edge source="java.rmi.ServerRuntimeException" target="java.rmi.RemoteException">
+              <point x="94.0" y="-0.0" />
+              <point x="1258.1818181818182" y="680.0" />
+              <point x="-21.818181818181756" y="-15.0" />
+            </edge>
+            <edge source="java.rmi.server.ServerRef" target="java.rmi.server.RemoteRef">
+              <point x="0.0" y="15.0" />
+              <point x="0.0" y="-15.0" />
+            </edge>
+            <edge source="java.rmi.UnmarshalException" target="java.rmi.RemoteException">
+              <point x="83.0" y="-0.0" />
+              <point x="1265.4545454545455" y="440.0" />
+              <point x="-14.545454545454504" y="-15.0" />
+            </edge>
+            <edge source="java.rmi.UnknownHostException" target="java.rmi.RemoteException">
+              <point x="-92.5" y="-0.0" />
+              <point x="74.5" y="-0.0" />
+            </edge>
+            <edge source="java.rmi.StubNotFoundException" target="java.rmi.RemoteException">
+              <point x="94.0" y="-0.0" />
+              <point x="1240.0" y="1400.0" />
+              <point x="-40.0" y="-15.0" />
+            </edge>
+            <edge source="java.rmi.ServerException" target="java.rmi.RemoteException">
+              <point x="70.5" y="-0.0" />
+              <point x="-74.5" y="-0.0" />
+            </edge>
+            <edge source="java.rmi.ConnectIOException" target="java.rmi.RemoteException">
+              <point x="0.0" y="15.0" />
+              <point x="0.0" y="-15.0" />
+            </edge>
+            <edge source="java.rmi.activation" target="java.rmi.server.UnicastRemoteObject">
+              <point x="-70.0" y="-0.0" />
+              <point x="86.5" y="-0.0" />
+            </edge>
+            <edge source="java.rmi.server.RemoteStub" target="java.rmi.server.RemoteObject">
+              <point x="-59.5" y="-0.0" />
+              <point x="65.5" y="-0.0" />
+            </edge>
+            <edge source="java.rmi.server.RMISocketFactory" target="java.rmi.server.RMIServerSocketFactory">
+              <point x="0.0" y="15.0" />
+              <point x="0.0" y="-15.0" />
+            </edge>
+            <edge source="java.rmi.server.SocketSecurityException" target="java.rmi.server.ExportException">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="java.rmi.server.ExportException" target="java.rmi.RemoteException">
+              <point x="71.0" y="-0.0" />
+              <point x="1243.6363636363637" y="1160.0" />
+              <point x="-36.36363636363626" y="-15.0" />
+            </edge>
+            <edge source="java.rmi.ServerError" target="java.rmi.RemoteException">
+              <point x="57.5" y="-0.0" />
+              <point x="1269.090909090909" y="320.0" />
+              <point x="-10.909090909090992" y="-15.0" />
+            </edge>
+            <edge source="java.rmi.UnexpectedException" target="java.rmi.RemoteException">
+              <point x="86.5" y="-0.0" />
+              <point x="1247.2727272727273" y="1080.0" />
+              <point x="-32.72727272727275" y="-15.0" />
+            </edge>
+            <edge source="java.rmi.server.RemoteServer" target="java.rmi.server.RemoteObject">
+              <point x="-65.0" y="-0.0" />
+              <point x="320.0" y="1000.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="java.rmi.MarshalException" target="java.rmi.RemoteException">
+              <point x="75.5" y="-0.0" />
+              <point x="1261.8181818181818" y="560.0" />
+              <point x="-18.181818181818244" y="-15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="835.0" y="1899.0" />
+          <SelectedNodes>
+            <node>java.rmi.registry</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/sun.rmi.transport">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>sun.rmi.transport</OriginalElement>
+          <nodes>
+            <node x="153.96499999999992" y="46.0">sun.rmi.transport.DGCClient</node>
+            <node x="0.0" y="647.0">sun.rmi.transport.ObjectTable</node>
+            <node x="174.71499999999992" y="239.5">sun.rmi.transport.DGCClient.EndpointEntry</node>
+            <node x="1466.5" y="239.5">sun.rmi.transport.ConnectionOutputStream</node>
+            <node x="1262.4891666666667" y="377.0">sun.rmi.transport.StreamRemoteCall</node>
+            <node x="14.0" y="727.0">sun.rmi.transport.ObjectTable.Reaper</node>
+            <node x="165.0" y="647.0">sun.rmi.transport.DGCImpl</node>
+            <node x="0.0" y="423.0">sun.rmi.transport.DGCClient.EndpointEntry.RenewCleanThread</node>
+            <node x="179.0" y="423.0">sun.rmi.transport.DGCClient.EndpointEntry.CleanRequest</node>
+            <node x="1087.5" y="46.0">sun.rmi.transport.WeakRef</node>
+            <node x="292.25" y="11.5">sun.rmi.transport.Endpoint</node>
+            <node x="505.0" y="647.0">sun.rmi.transport.DGCImpl_Skel</node>
+            <node x="342.0" y="660.201171875">sun.rmi.transport.proxy</node>
+            <node x="736.0" y="647.0">sun.rmi.transport.TransportConstants</node>
+            <node x="0.0" y="802.0">sun.rmi.transport.SequenceEntry</node>
+            <node x="762.0" y="239.5">sun.rmi.transport.tcp</node>
+            <node x="901.5" y="46.0">sun.rmi.transport.Transport</node>
+            <node x="401.5" y="549.0">sun.rmi.transport.DGCClient.EndpointEntry.RefEntry.PhantomLiveRef</node>
+            <node x="379.0" y="400.0">sun.rmi.transport.DGCClient.EndpointEntry.RefEntry</node>
+            <node x="178.0" y="802.0">sun.rmi.transport.DGCImpl_Stub</node>
+            <node x="163.0" y="727.0">sun.rmi.transport.DGCImpl.LeaseInfo</node>
+            <node x="1541.5" y="46.0">sun.rmi.transport.DGCAckHandler</node>
+            <node x="1245.5" y="0.0">sun.rmi.transport.Connection</node>
+            <node x="885.0" y="239.5">sun.rmi.transport.ObjectEndpoint</node>
+            <node x="694.2375" y="34.5">sun.rmi.transport.Channel</node>
+            <node x="1189.0" y="239.5">sun.rmi.transport.ConnectionInputStream</node>
+            <node x="327.0" y="182.0">sun.rmi.transport.LiveRef</node>
+            <node x="1043.0" y="228.0">sun.rmi.transport.Target</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="sun.rmi.transport.tcp" target="sun.rmi.transport.Connection">
+              <point x="41.19999999999999" y="-15.0" />
+              <point x="854.7" y="162.0" />
+              <point x="1291.5" y="162.0" />
+              <point x="-92.0" y="61.0" />
+            </edge>
+            <edge source="sun.rmi.transport.DGCImpl.LeaseInfo" target="sun.rmi.transport.DGCImpl">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="sun.rmi.transport.tcp" target="sun.rmi.transport.Endpoint">
+              <point x="-41.19999999999999" y="-15.0" />
+              <point x="772.3" y="152.0" />
+              <point x="514.75" y="152.0" />
+              <point x="89.0" y="49.5" />
+            </edge>
+            <edge source="sun.rmi.transport.ObjectTable.Reaper" target="sun.rmi.transport.ObjectTable">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="sun.rmi.transport.DGCClient.EndpointEntry.RefEntry.PhantomLiveRef" target="sun.rmi.transport.DGCClient.EndpointEntry.RefEntry">
+              <point x="0.0" y="-26.5" />
+              <point x="0.0" y="38.0" />
+            </edge>
+            <edge source="sun.rmi.transport.DGCClient.EndpointEntry.RenewCleanThread" target="sun.rmi.transport.DGCClient.EndpointEntry">
+              <point x="0.0" y="-15.0" />
+              <point x="79.5" y="352.0" />
+              <point x="196.21499999999992" y="352.0" />
+              <point x="-43.0" y="15.0" />
+            </edge>
+            <edge source="sun.rmi.transport.DGCClient.EndpointEntry.CleanRequest" target="sun.rmi.transport.DGCClient.EndpointEntry">
+              <point x="0.0" y="-15.0" />
+              <point x="242.5" y="352.0" />
+              <point x="239.21499999999992" y="352.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="sun.rmi.transport.DGCClient.EndpointEntry" target="sun.rmi.transport.DGCClient">
+              <point x="-32.25" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="sun.rmi.transport.tcp" target="sun.rmi.transport.Transport">
+              <point x="20.600000000000023" y="-15.0" />
+              <point x="834.1" y="152.0" />
+              <point x="919.0" y="152.0" />
+              <point x="-35.0" y="15.0" />
+            </edge>
+            <edge source="sun.rmi.transport.DGCClient.EndpointEntry.RefEntry" target="sun.rmi.transport.DGCClient.EndpointEntry">
+              <point x="-48.5" y="-38.0" />
+              <point x="427.5" y="352.0" />
+              <point x="282.2149999999999" y="352.0" />
+              <point x="43.0" y="15.0" />
+            </edge>
+            <edge source="sun.rmi.transport.tcp" target="sun.rmi.transport.Channel">
+              <point x="-20.600000000000023" y="-15.0" />
+              <point x="792.9" y="142.0" />
+              <point x="774.2375" y="142.0" />
+              <point x="0.0" y="26.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.9578534031413614" x="272.0" y="183.0" />
+          <SelectedNodes>
+            <node>sun.rmi.transport.DGCClient.EndpointEntry.RefEntry</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Inner Classes</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/transport;C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/server;">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/transport;C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/rmi/server;</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="579.0" y="-295.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/java/rmi/Naming.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/rmi/Naming.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="32" column="75" lean-forward="false" selection-start-line="32" selection-start-column="75" selection-end-line="32" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#12607#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/rmi/server/ObjID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2983">
+          <caret line="189" column="24" lean-forward="false" selection-start-line="189" selection-start-column="24" selection-end-line="189" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#8054#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#6544#6545#0" expanded="false" />
+            <element signature="e#6579#6580#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/java/rmi/server/ObjID.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/java.rmi.server.RemoteRef">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.rmi.server.RemoteRef</OriginalElement>
+          <nodes>
+            <node x="" y="">java.io.Externalizable</node>
+            <node x="" y="">java.rmi.server.RemoteRef</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="64.0" y="95.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jim/java8/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/SocketInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2432">
+          <caret line="158" column="30" lean-forward="false" selection-start-line="158" selection-start-column="30" selection-end-line="158" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#8214#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1710#1711#0" expanded="false" />
+            <element signature="e#1737#1738#0" expanded="false" />
+            <element signature="e#7967#7968#0" expanded="false" />
+            <element signature="e#7997#7998#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jim/java8/SocketTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/rmi/server/RemoteRef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>commons-beanutils-1.8.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>projects</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
