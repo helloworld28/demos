@@ -9,14 +9,17 @@ __author__ = 'JNingWei'
 
 from __future__ import division
 import Tkinter as tk
+import threading
+import time
 from Tkinter import *
 import tkMessageBox
 from PIL import Image, ImageTk
 import os
 import cv2
+import global_var_model as gl
 
 # colors for the bboxes
-COLORS = ['green', 'cyan', 'blue', 'purple', 'red', 'orange', 'yellow', 'brown', 'pink', 'magenta']
+COLORS = ['cyan', 'blue', 'purple', 'red', 'orange', 'yellow', 'brown', 'pink', 'magenta']
 
 # scaling ratio
 SCALING_RATIO = 0
@@ -25,15 +28,35 @@ SCALING_RATIO = 0
 REAL_IMG_W, REAL_IMG_H = 0, 0
 
 
-class LabelTool():
+class ShowRealTimeDataThread(threading.Thread):
+    """显示实时数据线程"""
+
+    def __init__(self, cam_id, label_tool):
+        threading.Thread.__init__(self)
+        self.stop_flag = False
+        self.cam_id = cam_id
+        self.label_tool = label_tool
+
+    def run(self):
+        while not self.stop_flag:
+            self.label_tool.del_all_real_time_data_box()
+            if self.cam_id in gl.gl_cam_data_list:
+                cam_data = gl.gl_cam_data_list[self.cam_id]
+                for box in cam_data.cam_received_bounding_box:
+                    self.label_tool.create_real_time_data_box(box[0:4])
+            time.sleep(0.5)
+        self.label_tool.del_all_real_time_data_box()
+
+
+class LabelTool:
     def __init__(self, master):
         # set up the main frame
         self.parent = master
-        self.parent.title("吉特天眼")
+        self.parent.iconbitmap("favicon.ico")
+        self.parent.title("吉特天眼系统")
         self.frame = tk.Frame(self.parent)
         self.frame.pack(fill=tk.BOTH, expand=1)
         self.parent.resizable(width=tk.FALSE, height=tk.FALSE)
-
 
         # initialize global state
         self.imageDir = ''
@@ -47,6 +70,10 @@ class LabelTool():
         self.imagename = ''
         self.labelfilename = ''
         self.tkimg = None
+
+        self.temp_real_time_box_list = list()
+
+        self.showRealTimeDataThread = ''
 
         # initialize mouse state
         self.STATE = {}
@@ -63,10 +90,9 @@ class LabelTool():
         # ----------------- GUI stuff ---------------------
 
         # dir entry & load
-        self.label = tk.Label(self.frame, text="Image Dir:")
-        self.label.grid(row=0, column=0, sticky=tk.E)
-        self.entry = tk.Entry(self.frame)
-        self.entry.grid(row=0, column=1, sticky=tk.W + tk.E)
+        self.label_top = tk.Label(self.frame, text="欢迎使用吉特天眼系统")
+        self.label_top.grid(row=0, column=0, columnspan=2, sticky=tk.E + tk.W)
+
         self.ldBtn = tk.Button(self.frame, text="Load", command=self.loadDir, border=2)
         self.ldBtn.grid(row=0, column=2, sticky=tk.W + tk.E)
         # main panel for labeling
@@ -81,25 +107,25 @@ class LabelTool():
         # showing bbox info & delete bbox
         self.lb1 = tk.Label(self.frame, text='Bounding boxes:')
         self.lb1.grid(row=1, column=2, sticky=tk.W)
-        self.listbox = tk.Listbox(self.frame, width=30, height=60)
+        self.listbox = tk.Listbox(self.frame, width=30, height=32)
         self.listbox.grid(row=2, column=2, sticky=tk.N)
         self.btnDel = tk.Button(self.frame, text='Delete', command=self.delBBox, border=2)
         self.btnDel.grid(row=3, column=2, sticky=tk.W + tk.E + tk.N)
         self.btnClear = tk.Button(self.frame, text='ClearAll', command=self.clearBBox, border=2)
         self.btnClear.grid(row=4, column=2, sticky=tk.W + tk.E + tk.N)
 
-
         # control panel for image navigation
         self.ctrPanel = tk.Frame(self.frame)
         # self.ctrPanel.pack()
+        self.ctrPanel = tk.Frame(self.frame)
         self.ctrPanel.grid(row=5, column=1, columnspan=2, sticky=tk.W + tk.E)
         self.prevBtn = tk.Button(self.ctrPanel, text='<< Prev', width=10, command=self.prevImage, border=5)
-        self.prevBtn.pack()
+        self.prevBtn.pack(side=tk.LEFT, padx=5, pady=3)
         self.nextBtn = tk.Button(self.ctrPanel, text='Next >>', width=10, command=self.nextImage, border=5)
-        self.nextBtn.pack()
+        self.nextBtn.pack(side=tk.LEFT, padx=5, pady=3)
         self.progLabel = tk.Label(self.ctrPanel, text="")
-        self.progLabel.pack()
-        self.tmpLabel = tk.Label(self.ctrPanel, text="Go to Image No.")
+        self.progLabel.pack(side=tk.LEFT, padx=5)
+        self.tmpLabel = tk.Label(self.ctrPanel, text="Go to Cam No.")
         self.tmpLabel.pack(side=tk.LEFT, padx=5)
         self.idxEntry = tk.Entry(self.ctrPanel, width=5)
         self.idxEntry.pack(side=tk.LEFT)
@@ -109,7 +135,7 @@ class LabelTool():
         self.exitBtn.pack(side=tk.RIGHT, padx=5, pady=3)
         self.egPanel = tk.Frame(self.frame, border=10)
         self.egPanel.grid(row=1, column=0, rowspan=5, sticky=tk.N + tk.E)
-        self.tmpLabel2 = tk.Label(self.egPanel, text="Pic:")
+        self.tmpLabel2 = tk.Label(self.egPanel, text="")
         self.tmpLabel2.pack(side=tk.TOP, pady=5)
         self.egLabels = []
         for i in range(3):
@@ -138,11 +164,17 @@ class LabelTool():
 
     def menu(self):
         menubar = tk.Menu(self.parent)
+        display_menu = tk.Menu(menubar, tearoff=0)
+        menubar.add_cascade(label='操作', menu=display_menu)
+        display_menu.add_command(label="开启实时数据", command=self.enable_show_real_time_data)
+        display_menu.add_command(label="关闭实时数据", command=self.unable_show_real_time_data)
+
         filemenu = tk.Menu(menubar, tearoff=0)
-        menubar.add_cascade(label='Help', menu=filemenu)
+        menubar.add_cascade(label='帮助', menu=filemenu)
         filemenu.add_command(label='<Esc>     cancel')
         filemenu.add_command(label='<A>       prev')
         filemenu.add_command(label='<D>       next')
+
         self.parent.config(menu=menubar)
 
     def center_window(self):
@@ -152,9 +184,31 @@ class LabelTool():
         y = round((hs // 2) - (h // 2))
         self.parent.geometry('%dx%d+%d+%d' % (w, h, x, y))
 
+    def enable_show_real_time_data(self):
+        """开启显示实时数据"""
+        if not self.showRealTimeDataThread:
+            self.showRealTimeDataThread = ShowRealTimeDataThread(self.imagename, self)
+            self.showRealTimeDataThread.start()
+
+    def create_real_time_data_box(self, box):
+        box_id = self.create_rectangle_with_box(box)
+        if box_id:
+            self.temp_real_time_box_list.append(box_id)
+
+    def del_all_real_time_data_box(self):
+        while len(self.temp_real_time_box_list) > 0:
+            box_id = self.temp_real_time_box_list.pop()
+            self.mainPanel.delete(box_id)
+
+    def unable_show_real_time_data(self):
+        if self.showRealTimeDataThread:
+            self.showRealTimeDataThread.stop_flag = True
+            self.del_all_real_time_data_box()
+            self.showRealTimeDataThread = None
+
     # 加载目录
     def loadDir(self):
-        self.category = self.entry.get()
+        self.category = ''
         self.imageDir = os.path.join('./src', str(self.category))
         self.imageList = [os.path.join(self.imageDir, pic) for pic in os.listdir(self.imageDir)
                           if os.path.splitext(pic)[1] in [".jpg", ".JPG", ".png", ".PNG"]]
@@ -189,6 +243,9 @@ class LabelTool():
         self.refreshBBox()
         self.imagename = os.path.split(image_path)[-1].split('.')[0]
         labelname = self.imagename + '.txt'
+
+        self.label_top['text'] = 'cam_id:' + self.imagename
+
         self.labelfilename = os.path.join(self.outDir, labelname)
         if os.path.exists(self.labelfilename):
             with open(self.labelfilename) as f:
@@ -197,7 +254,10 @@ class LabelTool():
                         continue
                     tmp_true = [int(t) for t in line.split()]
                     global SCALING_RATIO
-                    scaling = lambda x: int(x * SCALING_RATIO)
+
+                    def scaling(x):
+                        return int(x * SCALING_RATIO)
+
                     tmp_scaled = list(map(scaling, tmp_true))
                     self.bboxList.append(tuple(tmp_scaled))
                     tmpId = self.mainPanel.create_rectangle(tmp_scaled[0], tmp_scaled[1],
@@ -210,6 +270,30 @@ class LabelTool():
                                         .format(tmp_true[0], tmp_true[1], tmp_true[2], tmp_true[3]))
                     self.listbox.itemconfig(len(self.bboxIdList) - 1,
                                             fg=COLORS[(len(self.bboxIdList) - 1) % len(COLORS)])
+
+        # 实时显示的数据切换
+        if self.showRealTimeDataThread:
+            self.unable_show_real_time_data()
+            self.enable_show_real_time_data()
+
+    def create_rectangle_with_box(self, box):
+        global SCALING_RATIO
+
+        def scaling(x):
+            return int(x * SCALING_RATIO)
+
+        int_box = list(map(int, box))
+
+        box_scaled = list(map(scaling, int_box))
+        try:
+            rectangle_id = self.mainPanel.create_rectangle(box_scaled[0], box_scaled[1],
+                                                           box_scaled[2], box_scaled[3],
+                                                           width=3,
+                                                           outline='green')
+            return rectangle_id
+        except ValueError as detail:
+            print "Unexpected error:", sys.exc_info()[0]
+            print 'create_rectangle_with_box:', detail
 
     def saveImage(self):
         with open(self.labelfilename, 'w') as f:
@@ -342,3 +426,4 @@ if __name__ == '__main__':
     root = tk.Tk()
     tool = LabelTool(root)
     root.mainloop()
+    Wm.iconbitmap

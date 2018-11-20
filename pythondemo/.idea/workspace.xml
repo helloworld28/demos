@@ -2,35 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd969cc5-376e-4b0c-b317-353db131cd37" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../java8_test/src/main/java/com/jim/java8/MergeSqlFileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/c_fp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/cal_occupy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/cam_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/global_var_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/option.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/process_cam_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/regex_demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/src/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/tcp_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/utils/app_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/utils/test_app_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/１.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/WidgetsDemo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/canvas_demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/change_label.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/menu_demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/tkdemo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java8_test/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java8_test/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java8_test/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java8_test/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java8_test/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java8_test/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java8_test/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java8_test/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java8_test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java8_test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java8_test/java8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../java8_test/java8.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java8_test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java8_test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java8_test/src/main/java/com/jim/java8/FileReadTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java8_test/src/main/java/com/jim/java8/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java8_test/src/main/java/com/jim/java8/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/src/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/module1/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/cam_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/module1/cam_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/dst/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module1/dst/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/dst/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module1/dst/2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/labeling.py" beforeDir="false" afterPath="$PROJECT_DIR$/module1/labeling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/process_cam_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/module1/process_cam_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/src/1.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,13 +23,13 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/pythondemo$c_fp.coverage" NAME="c_fp Coverage Results" MODIFIED="1542276698011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
     <SUITE FILE_PATH="coverage/pythondemo$canvas_demo.coverage" NAME="canvas_demo Coverage Results" MODIFIED="1542347715027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/untitled" />
-    <SUITE FILE_PATH="coverage/pythondemo$labeling.coverage" NAME="labeling Coverage Results" MODIFIED="1542615785437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
+    <SUITE FILE_PATH="coverage/pythondemo$labeling.coverage" NAME="labeling Coverage Results" MODIFIED="1542684383412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
     <SUITE FILE_PATH="coverage/pythondemo$CP_block.coverage" NAME="CP_block Coverage Results" MODIFIED="1542278518415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
     <SUITE FILE_PATH="coverage/pythondemo$regex_demo.coverage" NAME="regex_demo Coverage Results" MODIFIED="1542593831865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
     <SUITE FILE_PATH="coverage/pythondemo$calculate.coverage" NAME="calculate Coverage Results" MODIFIED="1542279384209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
     <SUITE FILE_PATH="coverage/pythondemo$cal_occupy.coverage" NAME="cal_occupy Coverage Results" MODIFIED="1542444024538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
     <SUITE FILE_PATH="coverage/pythondemo$process_cam_data.coverage" NAME="process_cam_data Coverage Results" MODIFIED="1542608119745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
-    <SUITE FILE_PATH="coverage/pythondemo$app.coverage" NAME="app Coverage Results" MODIFIED="1542624502259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
+    <SUITE FILE_PATH="coverage/pythondemo$app.coverage" NAME="app Coverage Results" MODIFIED="1542703241085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
     <SUITE FILE_PATH="coverage/pythondemo$WidgetsDemo.coverage" NAME="WidgetsDemo Coverage Results" MODIFIED="1542340363730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/untitled" />
     <SUITE FILE_PATH="coverage/pythondemo$change_label.coverage" NAME="change_label Coverage Results" MODIFIED="1542340392047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/untitled" />
     <SUITE FILE_PATH="coverage/pythondemo$labeling27.coverage" NAME="labeling27 Coverage Results" MODIFIED="1542278526150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
@@ -68,21 +49,21 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="20" />
-          <entry key="py" value="10346" />
+          <entry key="dummy" value="24" />
+          <entry key="py" value="12577" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="24" />
-          <entry key="Python" value="10345" />
+          <entry key="PLAIN_TEXT" value="28" />
+          <entry key="Python" value="12576" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="2" />
-          <entry key="py" value="46" />
+          <entry key="py" value="51" />
           <entry key="pyi" value="2" />
           <entry key="txt" value="3" />
         </counts>
@@ -91,7 +72,7 @@
         <counts>
           <entry key="IDEA_MODULE" value="2" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="46" />
+          <entry key="Python" value="51" />
           <entry key="PythonStub" value="2" />
         </counts>
       </usages-collector>
@@ -99,35 +80,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module1/labeling.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+            <state relative-caret-position="347">
+              <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
               <folding>
                 <element signature="e#107#138#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module1/process_cam_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-              <folding>
-                <element signature="e#16#25#0" expanded="true" />
-                <marker date="1542624502197" expanded="true" signature="157:544" ph="..." />
-                <marker date="1542624502197" expanded="true" signature="923:924" ph="..." />
-                <marker date="1542624502197" expanded="true" signature="1745:2746" ph="..." />
-                <marker date="1542624502197" expanded="true" signature="2037:2212" ph="..." />
-                <marker date="1542624502197" expanded="true" signature="2544:2746" ph="..." />
-                <marker date="1542624502197" expanded="true" signature="2836:3053" ph="..." />
-                <marker date="1542624502197" expanded="true" signature="3090:3095" ph="..." />
-                <marker date="1542624502197" expanded="true" signature="3090:3384" ph="..." />
-                <marker date="1542624502197" expanded="true" signature="3702:3829" ph="..." />
-                <marker date="1542624502197" expanded="true" signature="3867:4235" ph="..." />
+                <marker date="1542703241021" expanded="true" signature="581:1204" ph="..." />
+                <marker date="1542703241021" expanded="true" signature="7702:7805" ph="..." />
+                <marker date="1542703241021" expanded="true" signature="7883:8038" ph="..." />
+                <marker date="1542703241021" expanded="true" signature="11351:12058" ph="..." />
+                <marker date="1542703241021" expanded="true" signature="12078:12083" ph="..." />
               </folding>
             </state>
           </provider>
@@ -143,41 +107,73 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module1/cal_occupy.py">
+        <entry file="file://$USER_HOME$/.IntelliJIdea2018.2/system/python_stubs/2009481889/__builtin__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="48" lean-forward="true" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+            <state relative-caret-position="398">
+              <caret line="3386" column="61" selection-start-line="3385" selection-start-column="38" selection-end-line="3386" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.IntelliJIdea2018.2/system/python_stubs/2009481889/time.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="125" column="42" lean-forward="true" selection-start-line="125" selection-start-column="42" selection-end-line="125" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda2/envs/py27/Lib/lib-tk/Tkinter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="1693" column="51" lean-forward="true" selection-start-line="1693" selection-start-column="43" selection-end-line="1693" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module1/process_cam_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="94" column="48" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="55" />
               <folding>
-                <marker date="1542623667304" expanded="true" signature="1075:1212" ph="..." />
+                <element signature="e#16#25#0" expanded="true" />
+                <marker date="1542695244118" expanded="true" signature="157:544" ph="..." />
+                <marker date="1542695244118" expanded="true" signature="923:924" ph="..." />
+                <marker date="1542695244118" expanded="true" signature="1824:2825" ph="..." />
+                <marker date="1542695244118" expanded="true" signature="2116:2291" ph="..." />
+                <marker date="1542695244118" expanded="true" signature="2623:2825" ph="..." />
+                <marker date="1542695244118" expanded="true" signature="2915:3132" ph="..." />
+                <marker date="1542695244118" expanded="true" signature="3169:3174" ph="..." />
+                <marker date="1542695244118" expanded="true" signature="3169:3461" ph="..." />
+                <marker date="1542695244118" expanded="true" signature="3779:3906" ph="..." />
+                <marker date="1542695244118" expanded="true" signature="3944:4361" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module1/dst/2.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$APPLICATION_PLUGINS_DIR$/python/helpers/pydev/pydevd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="1067" selection-start-line="1067" selection-end-line="1067" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module1/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="376">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
-                <marker date="1542612623256" expanded="true" signature="119:124" ph="..." />
-                <marker date="1542612623256" expanded="true" signature="197:202" ph="..." />
+                <marker date="1542702162735" expanded="true" signature="157:162" ph="..." />
+                <marker date="1542702162735" expanded="true" signature="465:470" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda2/envs/py27/Lib/site-packages/tornado/web.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="1508" selection-start-line="1508" selection-end-line="1508" />
             </state>
           </provider>
         </entry>
@@ -185,24 +181,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module1/cam_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+            <state relative-caret-position="304">
+              <caret line="34" column="77" lean-forward="true" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
               <folding>
                 <element signature="e#15#26#0" expanded="true" />
-                <marker date="1542624502212" expanded="true" signature="518:624" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module1/tcp_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding>
-                <element signature="e#15#24#0" expanded="true" />
-                <marker date="1542618391415" expanded="true" signature="2207:2212" ph="..." />
+                <marker date="1542697986084" expanded="true" signature="564:670" ph="..." />
               </folding>
             </state>
           </provider>
@@ -211,8 +194,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module1/global_var_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="285">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -241,6 +224,13 @@
       <find>colors</find>
       <find>outDir</find>
       <find>cam_cell_status</find>
+      <find>cam_received_bounding_box</find>
+      <find>create_real_time_data_box</find>
+      <find>scaling</find>
+      <find>stop_flag</find>
+      <find>process_data</find>
+      <find>create_rectangle_with_box</find>
+      <find>SCALING_RATIO</find>
     </findStrings>
     <replaceStrings>
       <replace>tkMessageBox.askyesno</replace>
@@ -259,16 +249,16 @@
         <option value="$PROJECT_DIR$/untitled/change_label.py" />
         <option value="$PROJECT_DIR$/untitled/canvas_demo.py" />
         <option value="$PROJECT_DIR$/untitled/menu_demo.py" />
-        <option value="$PROJECT_DIR$/module1/labeling.py" />
         <option value="$PROJECT_DIR$/module1/global_var.py" />
         <option value="$PROJECT_DIR$/module1/dst/1.txt" />
         <option value="$PROJECT_DIR$/module1/regex_demo.py" />
         <option value="$PROJECT_DIR$/module1/global_var_model.py" />
-        <option value="$PROJECT_DIR$/module1/app.py" />
         <option value="$PROJECT_DIR$/module1/tcp_server.py" />
         <option value="$PROJECT_DIR$/module1/cal_occupy.py" />
-        <option value="$PROJECT_DIR$/module1/cam_data.py" />
         <option value="$PROJECT_DIR$/module1/process_cam_data.py" />
+        <option value="$PROJECT_DIR$/module1/cam_data.py" />
+        <option value="$PROJECT_DIR$/module1/app.py" />
+        <option value="$PROJECT_DIR$/module1/labeling.py" />
       </list>
     </option>
   </component>
@@ -349,8 +339,8 @@
       <recent name="D:\work\mygit\demos\pythondemo\module1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\work\mygit\demos\pythondemo\module1\src" />
       <recent name="D:\work\mygit\demos\pythondemo\module1" />
+      <recent name="D:\work\mygit\demos\pythondemo\module1\src" />
       <recent name="D:\work\mygit\demos\pythondemo\.idea" />
     </key>
   </component>
@@ -366,7 +356,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.labeling">
+  <component name="RunManager" selected="Python.app">
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="" />
@@ -713,31 +703,32 @@
       <workItem from="1542182843260" duration="118000" />
       <workItem from="1542183041396" duration="8287000" />
       <workItem from="1542247210067" duration="16374000" />
-      <workItem from="1542276440162" duration="48969000" />
+      <workItem from="1542276440162" duration="70788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78820000" />
+    <option name="totallyTimeSpent" value="100639000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19189766" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19189766" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298647" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35796046" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39854318" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.35796046" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" visible="true" weight="0.39854318" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="JProfiler" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.39854318" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -882,13 +873,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda2/envs/py27/Lib/lib-tk/Tkinter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="352" column="8" selection-start-line="352" selection-start-column="8" selection-end-line="352" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module1/CP_block.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1010,20 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_PLUGINS_DIR$/python/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.IntelliJIdea2018.2/system/python_stubs/2009481889/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="2563" column="76" selection-start-line="2563" selection-start-column="76" selection-end-line="2563" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Anaconda2/envs/py27/Lib/site-packages/mpl_toolkits/axes_grid1/colorbar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -1045,51 +1015,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda2/envs/py27/Lib/site-packages/tornado/web.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="1508" selection-start-line="1508" selection-end-line="1508" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module1/dst/2.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module1/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <marker date="1542612623256" expanded="true" signature="119:124" ph="..." />
-            <marker date="1542612623256" expanded="true" signature="197:202" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module1/labeling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding>
-            <element signature="e#107#138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module1/global_var_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda2/envs/py27/Lib/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="800" selection-start-line="800" selection-end-line="800" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module1/tcp_server.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1112,33 +1039,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module1/cam_data.py">
+    <entry file="file://$USER_HOME$/Anaconda2/envs/py27/Lib/site-packages/tornado/web.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-          <folding>
-            <element signature="e#15#26#0" expanded="true" />
-            <marker date="1542624502212" expanded="true" signature="518:624" ph="..." />
-          </folding>
+        <state relative-caret-position="176">
+          <caret line="1508" selection-start-line="1508" selection-end-line="1508" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_PLUGINS_DIR$/python/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="1067" selection-start-line="1067" selection-end-line="1067" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.IntelliJIdea2018.2/system/python_stubs/2009481889/time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="125" column="42" lean-forward="true" selection-start-line="125" selection-start-column="42" selection-end-line="125" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.IntelliJIdea2018.2/system/python_stubs/2009481889/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="3386" column="61" selection-start-line="3385" selection-start-column="38" selection-end-line="3386" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda2/envs/py27/Lib/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="800" selection-start-line="800" selection-end-line="800" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module1/global_var_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module1/process_cam_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        <state relative-caret-position="260">
+          <caret line="94" column="48" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="55" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
-            <marker date="1542624502197" expanded="true" signature="157:544" ph="..." />
-            <marker date="1542624502197" expanded="true" signature="923:924" ph="..." />
-            <marker date="1542624502197" expanded="true" signature="1745:2746" ph="..." />
-            <marker date="1542624502197" expanded="true" signature="2037:2212" ph="..." />
-            <marker date="1542624502197" expanded="true" signature="2544:2746" ph="..." />
-            <marker date="1542624502197" expanded="true" signature="2836:3053" ph="..." />
-            <marker date="1542624502197" expanded="true" signature="3090:3095" ph="..." />
-            <marker date="1542624502197" expanded="true" signature="3090:3384" ph="..." />
-            <marker date="1542624502197" expanded="true" signature="3702:3829" ph="..." />
-            <marker date="1542624502197" expanded="true" signature="3867:4235" ph="..." />
+            <marker date="1542695244118" expanded="true" signature="157:544" ph="..." />
+            <marker date="1542695244118" expanded="true" signature="923:924" ph="..." />
+            <marker date="1542695244118" expanded="true" signature="1824:2825" ph="..." />
+            <marker date="1542695244118" expanded="true" signature="2116:2291" ph="..." />
+            <marker date="1542695244118" expanded="true" signature="2623:2825" ph="..." />
+            <marker date="1542695244118" expanded="true" signature="2915:3132" ph="..." />
+            <marker date="1542695244118" expanded="true" signature="3169:3174" ph="..." />
+            <marker date="1542695244118" expanded="true" signature="3169:3461" ph="..." />
+            <marker date="1542695244118" expanded="true" signature="3779:3906" ph="..." />
+            <marker date="1542695244118" expanded="true" signature="3944:4361" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module1/cam_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="34" column="77" lean-forward="true" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
+          <folding>
+            <element signature="e#15#26#0" expanded="true" />
+            <marker date="1542697986084" expanded="true" signature="564:670" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda2/envs/py27/Lib/lib-tk/Tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="1693" column="51" lean-forward="true" selection-start-line="1693" selection-start-column="43" selection-end-line="1693" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module1/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <marker date="1542702162735" expanded="true" signature="157:162" ph="..." />
+            <marker date="1542702162735" expanded="true" signature="465:470" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module1/labeling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+          <folding>
+            <element signature="e#107#138#0" expanded="true" />
+            <marker date="1542703241021" expanded="true" signature="581:1204" ph="..." />
+            <marker date="1542703241021" expanded="true" signature="7702:7805" ph="..." />
+            <marker date="1542703241021" expanded="true" signature="7883:8038" ph="..." />
+            <marker date="1542703241021" expanded="true" signature="11351:12058" ph="..." />
+            <marker date="1542703241021" expanded="true" signature="12078:12083" ph="..." />
           </folding>
         </state>
       </provider>

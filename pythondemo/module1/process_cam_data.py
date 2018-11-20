@@ -52,6 +52,8 @@ def process_data(cam_id, bounding_box_list):
         if is_nothing_in_cell(cam_id, cell_id):
             update_cell_status(cam_id, cell_id, 0)
 
+    gl.gl_cam_data_list[cam_id].cam_received_bounding_box = bounding_box_list
+
 
 def update_cell_status(cam_id, cell_id, status):
     if cam_id not in gl.gl_cam_data_list:
@@ -97,7 +99,7 @@ def get_cell_data():
 
 
 def get_cam_bounding_setting(cam_id):
-    bounding_file_name = os.path.join(gl.gl_bounding_setting_dir, (cam_id) + '.txt')
+    bounding_file_name = os.path.join(gl.gl_bounding_setting_dir, cam_id + '.txt')
     result_array = []
     if os.path.exists(bounding_file_name):
         with open(bounding_file_name) as f:
@@ -130,5 +132,7 @@ class ThreadGetData(threading.Thread):
             for cam_id in gl.gl_cam_data_list:
                 if cam_id in gl.gl_received_cam_data:
                     bounding_box_list = gl.gl_received_cam_data.pop(cam_id)
-                    process_data(cam_id, bounding_box_list)
-            time.sleep(1)
+                    if bounding_box_list:
+                        process_data(cam_id, bounding_box_list)
+
+            time.sleep(0.3)
