@@ -45,6 +45,7 @@ class ShowRealTimeDataThread(threading.Thread):
                 cam_data = gl.gl_cam_data_list[self.cam_id]
                 for box in cam_data.cam_received_bounding_box:
                     self.label_tool.create_real_time_data_box(box[0:4])
+
             time.sleep(0.5)
         self.label_tool.del_all_real_time_data_box()
 
@@ -73,6 +74,8 @@ class LabelTool:
         self.tkimg = None
 
         self.temp_real_time_box_list = list()
+
+        self.temp_read_time_box_fill_list = list()
 
         self.showRealTimeDataThread = ''
 
@@ -196,6 +199,11 @@ class LabelTool:
         if box_id:
             self.temp_real_time_box_list.append(box_id)
 
+    def create_real_time_rect_fill(self, box):
+        fill_in_id = self.create_rectangle_fill_in(box)
+        if fill_in_id:
+            self.temp_real_time_box_list.append(fill_in_id)
+
     def del_all_real_time_data_box(self):
         while len(self.temp_real_time_box_list) > 0:
             box_id = self.temp_real_time_box_list.pop()
@@ -259,16 +267,20 @@ class LabelTool:
                     def scaling(x):
                         return int(x * SCALING_RATIO)
 
-                    tmp_scaled = list(map(scaling, tmp_true))
-                    self.bboxList.append(tuple(tmp_scaled))
+                    tmp_scaled = list(map(scaling, tmp_true[0:4]))
+                    tmp_scaled.append(tmp_true[4])
+                    self.bboxList.append(tmp_scaled)
                     tmpId = self.mainPanel.create_rectangle(tmp_scaled[0], tmp_scaled[1],
                                                             tmp_scaled[2], tmp_scaled[3],
                                                             width=3,
                                                             outline=COLORS[(len(self.bboxList) - 1) % len(COLORS)])
+                    self.mainPanel.create_text(tmp_scaled[0] + 15, tmp_scaled[1] + 15, text=str(tmp_true[4]),
+                                               fill="red", font="Tine 20 bold")
+
                     self.bboxIdList.append(tmpId)
 
                     self.listbox.insert(tk.E, '{:>3d} ({:>3d}, {:>3d}) -> ({:>3d}, {:>3d})'
-                                        .format(1, tmp_true[0], tmp_true[1], tmp_true[2], tmp_true[3]))
+                                        .format(tmp_true[4], tmp_true[0], tmp_true[1], tmp_true[2], tmp_true[3]))
                     self.listbox.itemconfig(len(self.bboxIdList) - 1,
                                             fg=COLORS[(len(self.bboxIdList) - 1) % len(COLORS)])
 
@@ -284,7 +296,6 @@ class LabelTool:
             return int(x * SCALING_RATIO)
 
         int_box = list(map(int, box))
-
         box_scaled = list(map(scaling, int_box))
         rectangle_id = self.mainPanel.create_rectangle(box_scaled[0], box_scaled[1],
                                                        box_scaled[2], box_scaled[3],
@@ -292,17 +303,34 @@ class LabelTool:
                                                        outline='green')
         return rectangle_id
 
+    def create_rectangle_fill_in(self, box):
+        """绘带填充的矩形"""
+        global SCALING_RATIO
+
+        def scaling(x):
+            return int(x * SCALING_RATIO)
+
+        int_box = list(map(int, box))
+        box_scaled = list(map(scaling, int_box))
+        rectangle_id = self.mainPanel.create_rectangle(box_scaled[0], box_scaled[1],
+                                                       box_scaled[2], box_scaled[3],
+                                                       fill="red"
+                                                       )
+        return rectangle_id
+
     def saveImage(self):
         if self.labelfilename:
             with open(self.labelfilename, 'w') as f:
                 f.write('{}\n'.format(len(self.bboxList)))
-                self.bboxList.sort()
+                self.bboxList.sort(key=lambda box: box[4])
                 global SCALING_RATIO
                 recovering = lambda x: int(x / SCALING_RATIO)
                 for bbox in self.bboxList:
-                    bbox = list(map(recovering, bbox))
-                    bbox = self.check_border(bbox)
-                    f.write(' '.join(map(str, bbox)) + '\n')
+                    bbox_temp = list(map(recovering, bbox[0:4]))
+                    bbox_temp = self.check_border(bbox_temp[0:4])
+                    line = ' '.join(map(str, bbox_temp))
+                    line += ' ' + str(bbox[4])
+                    f.write(line + '\n')
             print('Image No. %d saved' % (self.cur))
 
     def check_border(self, bbox):
@@ -322,7 +350,8 @@ class LabelTool:
         else:
             x1, x2 = min(self.STATE['x'], event.x), max(self.STATE['x'], event.x)
             y1, y2 = min(self.STATE['y'], event.y), max(self.STATE['y'], event.y)
-            self.bboxList.append((x1, y1, x2, y2))
+            box_sequence = self.get_next_box_sequence()
+            self.bboxList.append((x1, y1, x2, y2, box_sequence))
             self.bboxIdList.append(self.bboxId)
             self.bboxIdList.sort()
             self.bboxId = None
@@ -331,13 +360,16 @@ class LabelTool:
             x1, y1, x2, y2 = list(map(recovering, [x1, y1, x2, y2]))
             x1, y1, x2, y2 = self.check_border([x1, y1, x2, y2])
 
-            self.listbox.insert(tk.END, '(%d, %d) -> (%d, %d)' % (x1, y1, x2, y2))
+            self.listbox.insert(tk.END, '%d (%d, %d) -> (%d, %d)' % (box_sequence, x1, y1, x2, y2))
             self.listbox.itemconfig(len(self.bboxIdList) - 1, fg=COLORS[(len(self.bboxIdList) - 1) % len(COLORS)])
+
+            self.saveImage()
+            self.loadImage()
         self.STATE['click'] = 1 - self.STATE['click']
 
-    def get_next_box_id(self):
+    def get_next_box_sequence(self):
         if self.bboxList:
-            return self.bboxList[-1][4]
+            return self.bboxList[-1][4] + 1
         else:
             return 1
 
@@ -374,6 +406,16 @@ class LabelTool:
         self.bboxIdList.pop(idx)
         self.bboxList.pop(idx)
         self.listbox.delete(idx)
+        self.update_box_sequence()
+        self.saveImage()
+        self.loadImage()
+
+    def update_box_sequence(self):
+        if self.listbox:
+            i = 1
+            for item in self.bboxList:
+                item[4] = i
+                i += 1
 
     def clearBBox(self):
         if tkMessageBox.askyesno(title='Warning', message='Are you sure to clear all ?'):
@@ -393,7 +435,7 @@ class LabelTool:
         if tkMessageBox.askyesno(title='', message='Delete it ?'):
             corresponding_idx = 1000
             for idx, bbox in enumerate(self.bboxList):
-                x1, y1, x2, y2 = bbox
+                x1, y1, x2, y2 = bbox[0:4]
                 if event.x > x1 and event.x < x2 and event.y > y1 and event.y < y2:
                     corresponding_idx = idx
             if corresponding_idx != 1000:
@@ -401,6 +443,9 @@ class LabelTool:
                 self.bboxIdList.pop(corresponding_idx)
                 self.bboxList.pop(corresponding_idx)
                 self.listbox.delete(corresponding_idx)
+                self.update_box_sequence()
+                self.saveImage()
+                self.loadImage()
 
     def prevImage(self, event=None):
         self.saveImage()
