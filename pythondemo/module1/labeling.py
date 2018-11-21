@@ -17,6 +17,7 @@ from PIL import Image, ImageTk
 import os
 import cv2
 import global_var_model as gl
+import app
 
 # colors for the bboxes
 COLORS = ['cyan', 'blue', 'purple', 'red', 'orange', 'yellow', 'brown', 'pink', 'magenta']
@@ -266,8 +267,8 @@ class LabelTool:
                                                             outline=COLORS[(len(self.bboxList) - 1) % len(COLORS)])
                     self.bboxIdList.append(tmpId)
 
-                    self.listbox.insert(tk.E, '({:>3d}, {:>3d}) -> ({:>3d}, {:>3d})'
-                                        .format(tmp_true[0], tmp_true[1], tmp_true[2], tmp_true[3]))
+                    self.listbox.insert(tk.E, '{:>3d} ({:>3d}, {:>3d}) -> ({:>3d}, {:>3d})'
+                                        .format(1, tmp_true[0], tmp_true[1], tmp_true[2], tmp_true[3]))
                     self.listbox.itemconfig(len(self.bboxIdList) - 1,
                                             fg=COLORS[(len(self.bboxIdList) - 1) % len(COLORS)])
 
@@ -285,27 +286,24 @@ class LabelTool:
         int_box = list(map(int, box))
 
         box_scaled = list(map(scaling, int_box))
-        try:
-            rectangle_id = self.mainPanel.create_rectangle(box_scaled[0], box_scaled[1],
-                                                           box_scaled[2], box_scaled[3],
-                                                           width=3,
-                                                           outline='green')
-            return rectangle_id
-        except ValueError as detail:
-            print "Unexpected error:", sys.exc_info()[0]
-            print 'create_rectangle_with_box:', detail
+        rectangle_id = self.mainPanel.create_rectangle(box_scaled[0], box_scaled[1],
+                                                       box_scaled[2], box_scaled[3],
+                                                       width=3,
+                                                       outline='green')
+        return rectangle_id
 
     def saveImage(self):
-        with open(self.labelfilename, 'w') as f:
-            f.write('{}\n'.format(len(self.bboxList)))
-            self.bboxList.sort()
-            global SCALING_RATIO
-            recovering = lambda x: int(x / SCALING_RATIO)
-            for bbox in self.bboxList:
-                bbox = list(map(recovering, bbox))
-                bbox = self.check_border(bbox)
-                f.write(' '.join(map(str, bbox)) + '\n')
-        print('Image No. %d saved' % (self.cur))
+        if self.labelfilename:
+            with open(self.labelfilename, 'w') as f:
+                f.write('{}\n'.format(len(self.bboxList)))
+                self.bboxList.sort()
+                global SCALING_RATIO
+                recovering = lambda x: int(x / SCALING_RATIO)
+                for bbox in self.bboxList:
+                    bbox = list(map(recovering, bbox))
+                    bbox = self.check_border(bbox)
+                    f.write(' '.join(map(str, bbox)) + '\n')
+            print('Image No. %d saved' % (self.cur))
 
     def check_border(self, bbox):
         x1, y1, x2, y2 = bbox
@@ -336,6 +334,12 @@ class LabelTool:
             self.listbox.insert(tk.END, '(%d, %d) -> (%d, %d)' % (x1, y1, x2, y2))
             self.listbox.itemconfig(len(self.bboxIdList) - 1, fg=COLORS[(len(self.bboxIdList) - 1) % len(COLORS)])
         self.STATE['click'] = 1 - self.STATE['click']
+
+    def get_next_box_id(self):
+        if self.bboxList:
+            return self.bboxList[-1][4]
+        else:
+            return 1
 
     def mouseMove(self, event):
         self.disp.config(text='x: %d, y: %d' % (event.x, event.y))
@@ -419,11 +423,11 @@ class LabelTool:
 
     def exit(self, event=None):
         self.saveImage()
-        exit(0)
+        self.parent.destroy()
+        app.exit_app()
 
 
 if __name__ == '__main__':
     root = tk.Tk()
     tool = LabelTool(root)
     root.mainloop()
-    Wm.iconbitmap

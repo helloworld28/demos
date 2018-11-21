@@ -4,7 +4,6 @@ import os
 
 import cal_occupy as occupy
 from cam_data import *
-from tcp_server import *
 
 
 def init_cam_data():
@@ -114,25 +113,13 @@ def get_cam_bounding_setting(cam_id):
     return result_array
 
 
-def start_process_data():
-    tcp_server = TcpServer()
-    TcpServerThread(tcp_server).start()
+def process_cam_data():
+    for cam_id in gl.gl_cam_data_list:
+        if cam_id in gl.gl_received_cam_data:
+            bounding_box_list = gl.gl_received_cam_data.pop(cam_id)
+            if bounding_box_list:
+                process_data(cam_id, bounding_box_list)
 
-    background_thread = ThreadGetData()
-    print("background process cam data has startup!")
-    background_thread.start()
 
 
-class ThreadGetData(threading.Thread):
-    def __init__(self):
-        threading.Thread.__init__(self)
 
-    def run(self):
-        while True:
-            for cam_id in gl.gl_cam_data_list:
-                if cam_id in gl.gl_received_cam_data:
-                    bounding_box_list = gl.gl_received_cam_data.pop(cam_id)
-                    if bounding_box_list:
-                        process_data(cam_id, bounding_box_list)
-
-            time.sleep(0.3)

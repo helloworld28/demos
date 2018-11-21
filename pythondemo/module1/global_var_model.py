@@ -16,3 +16,10 @@ gl_received_cam_data = dict()
 
 # 数据过期时间（秒）
 gl_cam_data_expired_time = 30
+
+# 退出系统标识，用于判断终止一些while true 循环
+gl_system_exit_flag = False
+
+gl_tcp_server = None
+gl_web_server = None
+gl_process_data_timer = None
