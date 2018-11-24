@@ -27,7 +27,7 @@ def cal_in_which_box(bounding_box_settings, bounding_box):
     """计算bounding box 落中哪个集合中"""
     middle_x, middle_y = cal_middle_x_y(bounding_box)
     for box in bounding_box_settings:
-        if box[0] <= middle_x <= box[2] and box[1] <= middle_y <= box[3]:
+        if int(box[1]) <= middle_x <= int(box[3]) and int(box[2]) <= middle_y <= int(box[4]):
             return box
 
 

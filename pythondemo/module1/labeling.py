@@ -11,6 +11,7 @@ from __future__ import division
 import Tkinter as tk
 import threading
 import time
+import tkSimpleDialog
 from Tkinter import *
 import tkMessageBox
 from PIL import Image, ImageTk
@@ -18,6 +19,7 @@ import os
 import cv2
 import global_var_model as gl
 import app
+import eye_utils
 
 # colors for the bboxes
 COLORS = ['cyan', 'blue', 'purple', 'red', 'orange', 'yellow', 'brown', 'pink', 'magenta']
@@ -88,13 +90,15 @@ class LabelTool:
         self.bboxIdList = []
         self.bboxId = None
         self.bboxList = []
+        self.bboxDict = dict()
         self.hl = None
         self.vl = None
+        self.is_edit_mode = False
 
         # ----------------- GUI stuff ---------------------
 
         # dir entry & load
-        self.label_top = tk.Label(self.frame, text="欢迎使用吉特天眼系统")
+        self.label_top = tk.Label(self.frame, text="欢迎使用吉特天眼系统", font=("Helvetica", 16))
         self.label_top.grid(row=0, column=0, columnspan=2, sticky=tk.E + tk.W)
 
         self.ldBtn = tk.Button(self.frame, text="Load", command=self.loadDir, border=2)
@@ -111,18 +115,20 @@ class LabelTool:
         # showing bbox info & delete bbox
         self.lb1 = tk.Label(self.frame, text='Bounding boxes:')
         self.lb1.grid(row=1, column=2, sticky=tk.W)
-        self.listbox = tk.Listbox(self.frame, width=30, height=32)
+        self.listbox = tk.Listbox(self.frame, width=30, height=30)
         self.listbox.grid(row=2, column=2, sticky=tk.N)
         self.btnDel = tk.Button(self.frame, text='Delete', command=self.delBBox, border=2)
         self.btnDel.grid(row=3, column=2, sticky=tk.W + tk.E + tk.N)
         self.btnClear = tk.Button(self.frame, text='ClearAll', command=self.clearBBox, border=2)
         self.btnClear.grid(row=4, column=2, sticky=tk.W + tk.E + tk.N)
+        self.btnModifyId = tk.Button(self.frame, text='modifyCellId', command=self.show_modify_cell_id_dialog, border=2)
+        self.btnModifyId.grid(row=5, column=2, sticky=tk.W + tk.E + tk.N)
 
         # control panel for image navigation
         self.ctrPanel = tk.Frame(self.frame)
         # self.ctrPanel.pack()
         self.ctrPanel = tk.Frame(self.frame)
-        self.ctrPanel.grid(row=5, column=1, columnspan=2, sticky=tk.W + tk.E)
+        self.ctrPanel.grid(row=6, column=1, columnspan=2, sticky=tk.W + tk.E)
         self.prevBtn = tk.Button(self.ctrPanel, text='<< Prev', width=10, command=self.prevImage, border=5)
         self.prevBtn.pack(side=tk.LEFT, padx=5, pady=3)
         self.nextBtn = tk.Button(self.ctrPanel, text='Next >>', width=10, command=self.nextImage, border=5)
@@ -151,6 +157,8 @@ class LabelTool:
         self.frame.rowconfigure(4, weight=1)
         self.center_window()
         self.menu()
+        self.parent.protocol("WM_DELETE_WINDOW", self.exit)
+        threading.Timer(1, self.loadDir).start()
 
     def scaling_panel(self, image_path):
         screen_w, screen_h = self.parent.winfo_screenwidth(), self.parent.winfo_screenheight()
@@ -172,6 +180,8 @@ class LabelTool:
         menubar.add_cascade(label='操作', menu=display_menu)
         display_menu.add_command(label="开启实时数据", command=self.enable_show_real_time_data)
         display_menu.add_command(label="关闭实时数据", command=self.unable_show_real_time_data)
+        display_menu.add_command(label="进入编辑模式", command=self.set_edit_mode)
+        display_menu.add_command(label="退出编辑模式", command=self.out_edit_mode)
 
         filemenu = tk.Menu(menubar, tearoff=0)
         menubar.add_cascade(label='帮助', menu=filemenu)
@@ -214,6 +224,12 @@ class LabelTool:
             self.showRealTimeDataThread.stop_flag = True
             self.del_all_real_time_data_box()
             self.showRealTimeDataThread = None
+
+    def set_edit_mode(self):
+        self.is_edit_mode = True
+
+    def out_edit_mode(self):
+        self.is_edit_mode = False
 
     # 加载目录
     def loadDir(self):
@@ -261,26 +277,28 @@ class LabelTool:
                 for (i, line) in enumerate(f):
                     if i == 0:
                         continue
-                    tmp_true = [int(t) for t in line.split()]
+                    tmp_true = [str(t) for t in line.split()]
                     global SCALING_RATIO
 
                     def scaling(x):
                         return int(x * SCALING_RATIO)
 
-                    tmp_scaled = list(map(scaling, tmp_true[0:4]))
-                    tmp_scaled.append(tmp_true[4])
+                    tmp_scaled = list(map(int, tmp_true[1:5]))
+                    tmp_scaled = list(map(scaling, tmp_scaled))
+                    tmp_scaled.insert(0, tmp_true[0])
                     self.bboxList.append(tmp_scaled)
-                    tmpId = self.mainPanel.create_rectangle(tmp_scaled[0], tmp_scaled[1],
-                                                            tmp_scaled[2], tmp_scaled[3],
+                    self.bboxDict[tmp_true[0]] = tmp_scaled
+                    tmpId = self.mainPanel.create_rectangle(tmp_scaled[1], tmp_scaled[2],
+                                                            tmp_scaled[3], tmp_scaled[4],
                                                             width=3,
                                                             outline=COLORS[(len(self.bboxList) - 1) % len(COLORS)])
-                    self.mainPanel.create_text(tmp_scaled[0] + 15, tmp_scaled[1] + 15, text=str(tmp_true[4]),
+                    self.mainPanel.create_text(tmp_scaled[1] + 15, tmp_scaled[2] + 15, text=str(tmp_true[0]),
                                                fill="red", font="Tine 20 bold")
 
                     self.bboxIdList.append(tmpId)
 
-                    self.listbox.insert(tk.E, '{:>3d} ({:>3d}, {:>3d}) -> ({:>3d}, {:>3d})'
-                                        .format(tmp_true[4], tmp_true[0], tmp_true[1], tmp_true[2], tmp_true[3]))
+                    self.listbox.insert(tk.E, '{:>3s} ({:>3s}, {:>3s}) -> ({:>3s}, {:>3s})'
+                                        .format(tmp_true[0], tmp_true[1], tmp_true[2], tmp_true[3], tmp_true[4]))
                     self.listbox.itemconfig(len(self.bboxIdList) - 1,
                                             fg=COLORS[(len(self.bboxIdList) - 1) % len(COLORS)])
 
@@ -297,11 +315,21 @@ class LabelTool:
 
         int_box = list(map(int, box))
         box_scaled = list(map(scaling, int_box))
-        rectangle_id = self.mainPanel.create_rectangle(box_scaled[0], box_scaled[1],
-                                                       box_scaled[2], box_scaled[3],
-                                                       width=3,
-                                                       outline='green')
-        return rectangle_id
+        try:
+            rectangle_id = self.mainPanel.create_rectangle(box_scaled[0], box_scaled[1],
+                                                           box_scaled[2], box_scaled[3],
+                                                           width=3,
+                                                           outline='green')
+            return rectangle_id
+        except ValueError:
+            pass
+
+    def show_modify_cell_id_dialog(self):
+        item = self.listbox.curselection()
+        if not item:
+            tkMessageBox.showwarning('Warn', 'please select one cell first!')
+        else:
+            dialog = ModifyCellIdDialog(self, self.listbox, self.bboxList[item[0]])
 
     def create_rectangle_fill_in(self, box):
         """绘带填充的矩形"""
@@ -322,14 +350,14 @@ class LabelTool:
         if self.labelfilename:
             with open(self.labelfilename, 'w') as f:
                 f.write('{}\n'.format(len(self.bboxList)))
-                self.bboxList.sort(key=lambda box: box[4])
+                self.bboxList.sort()
                 global SCALING_RATIO
                 recovering = lambda x: int(x / SCALING_RATIO)
                 for bbox in self.bboxList:
-                    bbox_temp = list(map(recovering, bbox[0:4]))
-                    bbox_temp = self.check_border(bbox_temp[0:4])
+                    bbox_temp = list(map(recovering, bbox[1:5]))
+                    bbox_temp = self.check_border(bbox_temp)
                     line = ' '.join(map(str, bbox_temp))
-                    line += ' ' + str(bbox[4])
+                    line = str(bbox[0]) + ' ' + line
                     f.write(line + '\n')
             print('Image No. %d saved' % (self.cur))
 
@@ -345,50 +373,59 @@ class LabelTool:
         return x1, y1, x2, y2
 
     def leftClick(self, event):
-        if self.STATE['click'] == 0:
-            self.STATE['x'], self.STATE['y'] = event.x, event.y
-        else:
-            x1, x2 = min(self.STATE['x'], event.x), max(self.STATE['x'], event.x)
-            y1, y2 = min(self.STATE['y'], event.y), max(self.STATE['y'], event.y)
-            box_sequence = self.get_next_box_sequence()
-            self.bboxList.append((x1, y1, x2, y2, box_sequence))
-            self.bboxIdList.append(self.bboxId)
-            self.bboxIdList.sort()
-            self.bboxId = None
+        if self.is_edit_mode:
+            if self.STATE['click'] == 0:
+                self.STATE['x'], self.STATE['y'] = event.x, event.y
+            else:
+                x1, x2 = min(self.STATE['x'], event.x), max(self.STATE['x'], event.x)
+                y1, y2 = min(self.STATE['y'], event.y), max(self.STATE['y'], event.y)
+                box_sequence = self.get_next_box_sequence()
+                self.bboxList.append((box_sequence, x1, y1, x2, y2))
+                self.bboxDict[box_sequence] = {x1, y1, x2, y2}
+                self.bboxIdList.append(self.bboxId)
+                self.bboxIdList.sort()
+                self.bboxId = None
 
-            recovering = lambda x: int(x / SCALING_RATIO)
-            x1, y1, x2, y2 = list(map(recovering, [x1, y1, x2, y2]))
-            x1, y1, x2, y2 = self.check_border([x1, y1, x2, y2])
+                recovering = lambda x: int(x / SCALING_RATIO)
+                x1, y1, x2, y2 = list(map(recovering, [x1, y1, x2, y2]))
+                x1, y1, x2, y2 = self.check_border([x1, y1, x2, y2])
 
-            self.listbox.insert(tk.END, '%d (%d, %d) -> (%d, %d)' % (box_sequence, x1, y1, x2, y2))
-            self.listbox.itemconfig(len(self.bboxIdList) - 1, fg=COLORS[(len(self.bboxIdList) - 1) % len(COLORS)])
+                self.listbox.insert(tk.END, '%s (%d, %d) -> (%d, %d)' % (str(box_sequence), x1, y1, x2, y2))
+                self.listbox.itemconfig(len(self.bboxIdList) - 1, fg=COLORS[(len(self.bboxIdList) - 1) % len(COLORS)])
 
-            self.saveImage()
-            self.loadImage()
-        self.STATE['click'] = 1 - self.STATE['click']
+                self.saveImage()
+                self.loadImage()
+            self.STATE['click'] = 1 - self.STATE['click']
 
     def get_next_box_sequence(self):
+
         if self.bboxList:
-            return self.bboxList[-1][4] + 1
+            num_str = eye_utils.get_last_num(self.bboxList[-1][0])
+            num_len = len(num_str)
+            num = int(num_str)
+            num += 1
+
+            return eye_utils.get_pre_str(self.bboxList[-1][0]) + str(num).zfill(num_len)
         else:
             return 1
 
     def mouseMove(self, event):
         self.disp.config(text='x: %d, y: %d' % (event.x, event.y))
-        if self.tkimg:
-            if self.hl:
-                self.mainPanel.delete(self.hl)
-            self.hl = self.mainPanel.create_line(0, event.y, self.tkimg.width(), event.y, width=2)
-            if self.vl:
-                self.mainPanel.delete(self.vl)
-            self.vl = self.mainPanel.create_line(event.x, 0, event.x, self.tkimg.height(), width=2)
-        if 1 == self.STATE['click']:
-            if self.bboxId:
-                self.mainPanel.delete(self.bboxId)
-            self.bboxId = self.mainPanel.create_rectangle(self.STATE['x'], self.STATE['y'],
-                                                          event.x, event.y,
-                                                          width=3,
-                                                          outline=COLORS[len(self.bboxList) % len(COLORS)])
+        if self.is_edit_mode:
+            if self.tkimg:
+                if self.hl:
+                    self.mainPanel.delete(self.hl)
+                self.hl = self.mainPanel.create_line(0, event.y, self.tkimg.width(), event.y, width=2)
+                if self.vl:
+                    self.mainPanel.delete(self.vl)
+                self.vl = self.mainPanel.create_line(event.x, 0, event.x, self.tkimg.height(), width=2)
+            if 1 == self.STATE['click']:
+                if self.bboxId:
+                    self.mainPanel.delete(self.bboxId)
+                self.bboxId = self.mainPanel.create_rectangle(self.STATE['x'], self.STATE['y'],
+                                                              event.x, event.y,
+                                                              width=3,
+                                                              outline=COLORS[len(self.bboxList) % len(COLORS)])
 
     def cancelBBox(self, event):
         if 1 == self.STATE['click']:
@@ -404,18 +441,11 @@ class LabelTool:
         idx = int(sel[0])
         self.mainPanel.delete(self.bboxIdList[idx])
         self.bboxIdList.pop(idx)
-        self.bboxList.pop(idx)
+        bbox = self.bboxList.pop(idx)
+        self.bboxDict.pop(bbox[0])
         self.listbox.delete(idx)
-        self.update_box_sequence()
         self.saveImage()
         self.loadImage()
-
-    def update_box_sequence(self):
-        if self.listbox:
-            i = 1
-            for item in self.bboxList:
-                item[4] = i
-                i += 1
 
     def clearBBox(self):
         if tkMessageBox.askyesno(title='Warning', message='Are you sure to clear all ?'):
@@ -424,6 +454,7 @@ class LabelTool:
             self.listbox.delete(0, len(self.bboxList))
             self.bboxIdList = []
             self.bboxList = []
+            self.bboxDict = dict()
 
     def rightClick(self, event):
         if 1 == self.STATE['click']:
@@ -443,7 +474,6 @@ class LabelTool:
                 self.bboxIdList.pop(corresponding_idx)
                 self.bboxList.pop(corresponding_idx)
                 self.listbox.delete(corresponding_idx)
-                self.update_box_sequence()
                 self.saveImage()
                 self.loadImage()
 
@@ -470,6 +500,33 @@ class LabelTool:
         self.saveImage()
         self.parent.destroy()
         app.exit_app()
+
+    def modify_cellId(self, bbox, new_value):
+        index = self.bboxList.index(bbox)
+        self.bboxList.pop(index)
+        self.bboxList.insert(index, (new_value, bbox[1], bbox[2], bbox[3], bbox[4]))
+        self.saveImage()
+        self.loadImage()
+
+
+class ModifyCellIdDialog(tkSimpleDialog.Dialog):
+
+    def __init__(self, labeling, master, bbox):
+        self.bbox = bbox
+        self.label = labeling
+        tkSimpleDialog.Dialog.__init__(self, master, "修改编号")
+
+    def body(self, master):
+        Label(master, text=self.bbox[0]).pack()
+
+        self.e1 = Entry(master)
+
+        self.e1.pack()
+        return self.e1  # initial focus
+
+    def apply(self):
+        new_cell_value = str(self.e1.get())
+        self.label.modify_cellId(self.bbox, new_cell_value)
 
 
 if __name__ == '__main__':

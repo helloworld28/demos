@@ -40,16 +40,16 @@ def process_data(cam_id, bounding_box_list):
     for (j, bounding_box) in enumerate(bounding_box_list):
         box = occupy.cal_in_which_box(cam_bounding_settings, bounding_box)
         if box:
-            cell_id = cam_bounding_settings.index(box)
+            cell_id = box[0]
             if bounding_box[4] == 'person':
                 update_cell_status(cam_id, cell_id, 2)
                 # 4.
             if bounding_box[4] == 'holder' and not is_exists_stock_in_cell(cam_id, cell_id):
                 update_cell_status(cam_id, cell_id, 1)
     # 5.
-    for (cell_id, setting_bounding_box) in enumerate(cam_bounding_settings):
-        if is_nothing_in_cell(cam_id, cell_id):
-            update_cell_status(cam_id, cell_id, 0)
+    for setting_bounding_box in cam_bounding_settings:
+        if is_nothing_in_cell(cam_id, setting_bounding_box[0]):
+            update_cell_status(cam_id, setting_bounding_box[0], 0)
 
     gl.gl_cam_data_list[cam_id].cam_received_bounding_box = bounding_box_list
 
@@ -88,12 +88,9 @@ def is_nothing_in_cell(cam_id, cell_id):
 
 def get_cell_data():
     """merge all cam cell data"""
-    cell_id = 0
     result = dict()
     for (cam_id, cam_data) in sorted(gl.gl_cam_data_list.items()):
-        for (k, status) in cam_data.get_cam_cell_status().items():
-            result[cell_id] = status
-            cell_id += 1
+        result.update(cam_data.cam_cell_status)
     return result
 
 
@@ -105,8 +102,7 @@ def get_cam_bounding_setting(cam_id):
             for (i, line) in enumerate(f):
                 if i == 0:
                     continue
-                bounding_num_array = [int(t) for t in line.split()]
-                result_array.append(bounding_num_array)
+                result_array.append([str(t) for t in line.split()])
 
     else:
         print ("can not find the cam_id bounding setting!!!")
@@ -119,7 +115,3 @@ def process_cam_data():
             bounding_box_list = gl.gl_received_cam_data.pop(cam_id)
             if bounding_box_list:
                 process_data(cam_id, bounding_box_list)
-
-
-
-

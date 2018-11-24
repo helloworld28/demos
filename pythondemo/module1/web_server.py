@@ -2,10 +2,13 @@ import threading
 from threading import Timer
 
 from process_cam_data import *
+import json
 from tornado import web, ioloop
 class WebHandler(web.RequestHandler):
     def get(self):
-        self.write(str(get_cell_data()))
+        data = get_cell_data()
+        json_str = json.dumps(data)
+        self.write(json_str)
 
 
 class ThreadStartWebServer(threading.Thread):

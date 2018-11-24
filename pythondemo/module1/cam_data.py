@@ -19,7 +19,7 @@ class CamData:
         print ("new instance of cam[{}]".format(self.cam_id))
 
     def get_cam_cell_status(self):
-        if self.is_outdated():
+        if self.status != 2 and self.is_outdated():
             self.set_out_dated()
         return self.cam_cell_status
 
@@ -44,5 +44,5 @@ class CamData:
 
     def init_cell_status(self):
         if self.cam_cell_bounding_box_setting:
-            for cell_id, item in enumerate(self.cam_cell_bounding_box_setting):
-                self.update_cell_status(cell_id, -1)
+            for item in self.cam_cell_bounding_box_setting:
+                self.update_cell_status(item[0], -1)
