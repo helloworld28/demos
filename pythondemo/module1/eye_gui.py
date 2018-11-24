@@ -12,7 +12,7 @@ import tkMessageBox
 import process_cam_data
 from PIL import Image, ImageTk
 import app
-
+import global_var_model as gl
 import eye_utils
 
 TITLE_FONT = ("Helvetica", 18, "bold")
@@ -84,7 +84,8 @@ class EyeGUI(tk.Tk):
 
     def exit(self, event=None):
         # TODO
-        app.exit()
+        self.destroy()
+        app.exit_app()
 
     def center_window(self):
         ws, hs = self.winfo_screenwidth(), self.winfo_screenheight()
@@ -104,7 +105,7 @@ class UpdateMonitorDataThread(threading.Thread):
         self.last_cell_stats = {}
 
     def run(self):
-        while not self.stop_flag:
+        while not gl.gl_system_exit_flag:
             cell_data = process_cam_data.get_cell_data()
             keys = cell_data.keys()
             try:
@@ -270,7 +271,7 @@ class LabelingPage(tk.Frame):
         self.idxEntry.pack(side=tk.LEFT)
         self.goBtn = tk.Button(self.ctrPanel, text='Go', command=self.gotoImage, border=2)
         self.goBtn.pack(side=tk.LEFT)
-        self.exitBtn = tk.Button(self.ctrPanel, text='Exit !', width=10, command=self.controller.exit, border=5)
+        self.exitBtn = tk.Button(self.ctrPanel, text='保存', width=10, command=self.saveImage, border=5)
         self.exitBtn.pack(side=tk.RIGHT, padx=5, pady=3)
         self.egPanel = tk.Frame(self, border=10)
         self.egPanel.grid(row=1, column=0, rowspan=5, sticky=tk.N + tk.E)
@@ -349,7 +350,7 @@ class LabelingPage(tk.Frame):
                                                             width=3,
                                                             outline=COLORS[(len(self.bboxList) - 1) % len(COLORS)])
                     self.mainPanel.create_text(tmp_scaled[1] + 15, tmp_scaled[2] + 15, text=str(tmp_true[0]),
-                                               fill="red", font="Tine 20 bold")
+                                               fill="red", font="Tine 20 bold", tags="cell_label")
 
                     self.bboxIdList.append(tmpId)
 
@@ -518,10 +519,13 @@ class LabelingPage(tk.Frame):
         if tkMessageBox.askyesno(title='Warning', message='Are you sure to clear all ?'):
             for idx in range(len(self.bboxIdList)):
                 self.mainPanel.delete(self.bboxIdList[idx])
+            self.mainPanel.delete('cell_label')
             self.listbox.delete(0, len(self.bboxList))
             self.bboxIdList = []
             self.bboxList = []
             self.bboxDict = dict()
+
+
 
     def rightClick(self, event):
         if 1 == self.STATE['click']:
@@ -533,7 +537,7 @@ class LabelingPage(tk.Frame):
         if tkMessageBox.askyesno(title='', message='Delete it ?'):
             corresponding_idx = 1000
             for idx, bbox in enumerate(self.bboxList):
-                x1, y1, x2, y2 = bbox[0:4]
+                x1, y1, x2, y2 = bbox[1:5]
                 if event.x > x1 and event.x < x2 and event.y > y1 and event.y < y2:
                     corresponding_idx = idx
             if corresponding_idx != 1000:
