@@ -1,6 +1,6 @@
 # coding=utf-8
 
-from labeling import *
+import eye_gui
 from tcp_server import *
 from timer_util import *
 from web_server import *
@@ -30,9 +30,8 @@ def start_app():
 
 def start_gui():
     # 开启GUI
-    root = tk.Tk()
-    tool = LabelTool(root)
-    root.mainloop()
+    gui = eye_gui.EyeGUI()
+    gui.mainloop()
 
 
 def exit_app():
