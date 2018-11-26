@@ -10,8 +10,8 @@ def start_app():
     # 开启tcp server
     print ("start tcp server")
     init_cam_data()
-    tcp_server = TcpServer()
-    Timer(1, tcp_server.start_receive_data).start()
+    tcp_server = TcpAsyncServer()
+    Timer(1, tcp_server.start_server).start()
     gl.gl_tcp_server = tcp_server
 
     process_cam_data_timer = PerpetualTimer(0.5, process_cam_data)

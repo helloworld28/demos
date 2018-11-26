@@ -1,9 +1,45 @@
 # coding=utf-8
+import asyncore
 import re
 import select
 from socket import *
 
 import global_var_model as gl
+
+
+class SocketClientHandler(asyncore.dispatcher_with_send):
+    def handle_read(self):
+        data = self.recv(8192)
+        if data:
+            # 1.校验完整性
+            pattern = re.compile("^\{(.+)\}$")
+            if pattern.match(data):
+                put_data(data)
+                print ("receive data[{}]".format(data))
+            else:
+                print("invalid data[{}]".format(data))
+
+
+class TcpAsyncServer(asyncore.dispatcher):
+    def __init__(self):
+        asyncore.dispatcher.__init__(self)
+        self.create_socket(AF_INET, SOCK_STREAM)
+        self.set_reuse_addr()
+        self.bind(('', gl.gl_tcp_server_port))
+        self.listen(50)
+
+    def handle_accept(self):
+        pair = self.accept()
+        if pair is not None:
+            sock, address = pair
+            print("{} connected ".format(str(address)))
+            SocketClientHandler(sock)
+
+    def start_server(self):
+        asyncore.loop()
+
+    def stop_server(self):
+        asyncore.close_all()
 
 
 class TcpServer:

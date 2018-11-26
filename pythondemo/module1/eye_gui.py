@@ -29,7 +29,7 @@ SCALING_RATIO = 0
 # real_image_size
 REAL_IMG_W, REAL_IMG_H = 0, 0
 
-ROW_CELL_NUM = 6
+ROW_CELL_NUM = 9
 
 
 class EyeGUI(tk.Tk):
@@ -144,17 +144,15 @@ class MonitorPage(tk.Frame):
 
         grid1_label = Label(cell, text=cell_id, padx=10, font=TITLE_FONT)
         grid1_label.grid(row=0, sticky=W)
-        grid1_btn1 = Button(cell, text=self.translate_status_zh(status), borderwidth=0, width="31", height="15",
+        grid1_btn1 = Button(cell, text=self.translate_status_zh(status), borderwidth=0, width="20", height="9",
                             background=self.translate_status_color(status))
         grid1_btn1.grid(row=1, )
 
         row_num = int((len(self.cells)) / ROW_CELL_NUM)
         column_num = (len(self.cells)) % ROW_CELL_NUM
 
-        if column_num == 0:
-            cell.grid(row=row_num, column=column_num, padx=10, pady=10)
-        else:
-            cell.grid(row=row_num, column=column_num, padx=5, pady=10)
+
+        cell.grid(row=row_num, column=column_num, padx=5, pady=10)
 
         self.cells_label_dic[cell_id] = grid1_label
         self.cells_button_dic[cell_id] = grid1_btn1
