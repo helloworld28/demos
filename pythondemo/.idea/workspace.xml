@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd969cc5-376e-4b0c-b317-353db131cd37" name="Default" comment="增加监控页面">
-      <change afterPath="$PROJECT_DIR$/module1/asncore_demo.py" afterDir="false" />
+    <list default="true" id="fd969cc5-376e-4b0c-b317-353db131cd37" name="Default" comment="tcpserver改用asyncore来实现">
+      <change afterPath="$PROJECT_DIR$/../eye_app/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/eyeapp/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/eyeapp/cal_occupy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/eyeapp/cam_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/eyeapp/dst/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/eyeapp/dst/2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/eyeapp/eye_gui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/eyeapp/eye_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/eyeapp/eyeapp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/eyeapp/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/eyeapp/global_var_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/eyeapp/process_cam_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/eyeapp/requirement.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/eyeapp/src/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/eyeapp/src/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/eyeapp/tcp_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eye_app/eyeapp/web_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java8_test/src/main/java/com/jim/java8/Exec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java8_test/src/main/java/com/jim/java8/threads/DoubleCheckLocking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java8_test/src/main/java/com/jim/java8/threads/SafeLazyInitSingleInstance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock_server_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/movekServicClient.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java8_test/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java8_test/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java8_test/.idea/libraries/Maven__cglib_cglib_3_2_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java8_test/.idea/libraries/Maven__org_ow2_asm_asm_6_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java8_test/.idea/libraries/Maven__org_testng_testng_7_0_0_beta1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java8_test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java8_test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java8_test/java8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../java8_test/java8.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java8_test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java8_test/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/module1/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/dst/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module1/dst/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/dst/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module1/dst/2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/CP_block.py" beforeDir="false" afterPath="$PROJECT_DIR$/module1/CP_block.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module1/eye_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/module1/eye_gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/tcp_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/module1/tcp_server.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,15 +50,16 @@
     <SUITE FILE_PATH="coverage/pythondemo$c_fp.coverage" NAME="c_fp Coverage Results" MODIFIED="1542276698011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
     <SUITE FILE_PATH="coverage/pythondemo$canvas_demo.coverage" NAME="canvas_demo Coverage Results" MODIFIED="1542347715027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/untitled" />
     <SUITE FILE_PATH="coverage/pythondemo$asncore.coverage" NAME="asncore Coverage Results" MODIFIED="1543204698110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
+    <SUITE FILE_PATH="coverage/pythondemo$mock_server_client.coverage" NAME="mock_server_client Coverage Results" MODIFIED="1548755554473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythondemo$labeling.coverage" NAME="labeling Coverage Results" MODIFIED="1542684383412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
-    <SUITE FILE_PATH="coverage/pythondemo$CP_block.coverage" NAME="CP_block Coverage Results" MODIFIED="1543198972162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
+    <SUITE FILE_PATH="coverage/pythondemo$CP_block.coverage" NAME="CP_block Coverage Results" MODIFIED="1548658506964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
     <SUITE FILE_PATH="coverage/pythondemo$regex_demo.coverage" NAME="regex_demo Coverage Results" MODIFIED="1542593831865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
     <SUITE FILE_PATH="coverage/pythondemo$calculate.coverage" NAME="calculate Coverage Results" MODIFIED="1542279384209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
     <SUITE FILE_PATH="coverage/pythondemo$cal_occupy.coverage" NAME="cal_occupy Coverage Results" MODIFIED="1542444024538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
     <SUITE FILE_PATH="coverage/pythondemo$process_cam_data.coverage" NAME="process_cam_data Coverage Results" MODIFIED="1542608119745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
     <SUITE FILE_PATH="coverage/pythondemo$process_bar2.coverage" NAME="process_bar2 Coverage Results" MODIFIED="1542788179731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
     <SUITE FILE_PATH="coverage/pythondemo$test.coverage" NAME="test Coverage Results" MODIFIED="1543025284057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
-    <SUITE FILE_PATH="coverage/pythondemo$app.coverage" NAME="app Coverage Results" MODIFIED="1543204706187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
+    <SUITE FILE_PATH="coverage/pythondemo$app.coverage" NAME="app Coverage Results" MODIFIED="1543212623550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
     <SUITE FILE_PATH="coverage/pythondemo$WidgetsDemo.coverage" NAME="WidgetsDemo Coverage Results" MODIFIED="1542340363730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/untitled" />
     <SUITE FILE_PATH="coverage/pythondemo$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1542877896001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module1" />
     <SUITE FILE_PATH="coverage/pythondemo$change_label.coverage" NAME="change_label Coverage Results" MODIFIED="1542340392047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/untitled" />
@@ -42,44 +72,50 @@
     <session id="596929054">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.29" value="2" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.31" value="1" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="80" />
-          <entry key="py" value="23659" />
-          <entry key="txt" value="120" />
+          <entry key="py" value="25212" />
+          <entry key="txt" value="162" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="201" />
-          <entry key="Python" value="23658" />
+          <entry key="PLAIN_TEXT" value="243" />
+          <entry key="Python" value="25211" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="2" />
-          <entry key="py" value="107" />
-          <entry key="pyi" value="7" />
+          <entry key="js" value="2" />
+          <entry key="py" value="120" />
+          <entry key="pyi" value="8" />
           <entry key="txt" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="2" />
+          <entry key="JavaScript" value="2" />
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Python" value="107" />
-          <entry key="PythonStub" value="7" />
+          <entry key="Python" value="120" />
+          <entry key="PythonStub" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -92,100 +128,96 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module1/asncore_demo.py">
+        <entry file="file://$PROJECT_DIR$/module1/eye_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-                <marker date="1543204239296" expanded="true" signature="847:896" ph="..." />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module1/cal_occupy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="33" column="18" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module1/cam_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="741">
+              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module1/tcp_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="35" column="37" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="35" selection-end-column="37" />
-              <folding>
-                <element signature="e#15#30#0" expanded="true" />
-                <marker date="1543204127984" expanded="true" signature="551:1096" ph="..." />
-                <marker date="1543204127984" expanded="true" signature="575:580" ph="..." />
-                <marker date="1543204127984" expanded="true" signature="2888:2889" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stdlib/2and3/socket.pyi">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="824">
-              <caret line="566" column="76" selection-start-line="566" selection-start-column="51" selection-end-line="566" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module1/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-              <folding>
-                <element signature="e#16#30#0" expanded="true" />
-                <marker date="1543204155704" expanded="true" signature="124:880" ph="..." />
-                <marker date="1543204155704" expanded="true" signature="668:673" ph="..." />
-                <marker date="1543204155704" expanded="true" signature="727:729" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module1/global_var_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda2/envs/py27/Lib/asyncore.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="420" selection-start-line="420" selection-end-line="420" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda2/envs/py27/Lib/socket.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="236" selection-start-line="236" selection-end-line="236" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module1/eye_gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1254">
-              <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+            <state relative-caret-position="873">
+              <caret line="566" column="28" selection-start-line="566" selection-start-column="28" selection-end-line="566" selection-end-column="28" />
               <folding>
                 <element signature="e#15#46#0" expanded="true" />
-                <marker date="1543198920628" expanded="true" signature="682:683" ph="..." />
-                <marker date="1543198920628" expanded="true" signature="682:687" ph="..." />
-                <marker date="1543198920628" expanded="true" signature="2221:2267" ph="..." />
-                <marker date="1543198920628" expanded="true" signature="2395:2404" ph="..." />
-                <marker date="1543198920628" expanded="true" signature="2395:2462" ph="..." />
-                <marker date="1543198920628" expanded="true" signature="3666:3671" ph="..." />
-                <marker date="1543198920628" expanded="true" signature="4216:4268" ph="..." />
-                <marker date="1543198920628" expanded="true" signature="5051:5450" ph="..." />
-                <marker date="1543198920628" expanded="true" signature="5979:22787" ph="..." />
+                <marker date="1543212623503" expanded="true" signature="682:683" ph="..." />
+                <marker date="1543212623503" expanded="true" signature="682:687" ph="..." />
+                <marker date="1543212623503" expanded="true" signature="2221:2267" ph="..." />
+                <marker date="1543212623503" expanded="true" signature="2395:2404" ph="..." />
+                <marker date="1543212623503" expanded="true" signature="2395:2462" ph="..." />
+                <marker date="1543212623503" expanded="true" signature="3662:3667" ph="..." />
+                <marker date="1543212623503" expanded="true" signature="4212:4264" ph="..." />
+                <marker date="1543212623503" expanded="true" signature="5047:5447" ph="..." />
+                <marker date="1543212623503" expanded="true" signature="5976:22784" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module1/movekServicClient.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="175" column="78" lean-forward="true" selection-start-line="175" selection-start-column="78" selection-end-line="175" selection-end-column="78" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module1/test2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mock_server_client.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+                <marker date="1548755554451" expanded="true" signature="203:1143" ph="..." />
+                <marker date="1548755554451" expanded="true" signature="203:1326" ph="..." />
+                <marker date="1548755554451" expanded="true" signature="1167:1172" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module1/option.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -194,11 +226,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module1/CP_block.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+            <state relative-caret-position="418">
+              <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="39" selection-end-column="36" />
               <folding>
                 <element signature="e#46#62#0" expanded="true" />
-                <marker date="1542278325798" expanded="true" signature="12278:12287" ph="..." />
+                <marker date="1543301571007" expanded="true" signature="12706:12709" ph="..." />
+                <marker date="1543301571007" expanded="true" signature="13136:13145" ph="..." />
               </folding>
             </state>
           </provider>
@@ -207,8 +240,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.IntelliJIdea2018.2/system/python_stubs/2009481889/_socket.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="135" selection-start-line="135" selection-end-line="135" />
+            <state relative-caret-position="2679">
+              <caret line="141" column="17" selection-start-line="141" selection-start-column="17" selection-end-line="141" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -218,20 +251,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>outDir</find>
-      <find>cam_cell_status</find>
-      <find>cam_received_bounding_box</find>
-      <find>create_real_time_data_box</find>
-      <find>scaling</find>
-      <find>stop_flag</find>
-      <find>saveImage</find>
-      <find>exit</find>
       <find>TcpServerThread</find>
       <find>process_data</find>
       <find>gl_system_exit_flag</find>
@@ -254,6 +280,14 @@
       <find>scaling_panel</find>
       <find>update_cell_status</find>
       <find>HTTPClient</find>
+      <find>product</find>
+      <find>clientIdCallback</find>
+      <find>HttpRequest</find>
+      <find>requestHandler</find>
+      <find>clientIdHandler</find>
+      <find>clientId</find>
+      <find>mockAnyResponse</find>
+      <find>contextPath</find>
     </findStrings>
     <replaceStrings>
       <replace>tkMessageBox.askyesno</replace>
@@ -271,7 +305,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/module1/c_fp.py" />
-        <option value="$PROJECT_DIR$/module1/CP_block.py" />
         <option value="$PROJECT_DIR$/module1/calculate.py" />
         <option value="$PROJECT_DIR$/untitled/WidgetsDemo.py" />
         <option value="$PROJECT_DIR$/untitled/change_label.py" />
@@ -293,11 +326,14 @@
         <option value="$PROJECT_DIR$/module1/test.py" />
         <option value="$PROJECT_DIR$/module1/labeling.py" />
         <option value="$PROJECT_DIR$/module1/eye_app.py" />
-        <option value="$PROJECT_DIR$/module1/eye_gui.py" />
         <option value="$PROJECT_DIR$/module1/asncore.py" />
-        <option value="$PROJECT_DIR$/module1/tcp_server.py" />
         <option value="$PROJECT_DIR$/module1/app.py" />
         <option value="$PROJECT_DIR$/module1/asncore_demo.py" />
+        <option value="$PROJECT_DIR$/module1/eye_gui.py" />
+        <option value="$PROJECT_DIR$/module1/CP_block.py" />
+        <option value="$PROJECT_DIR$/module1/tcp_server.py" />
+        <option value="$PROJECT_DIR$/module1/movekServicClient.js" />
+        <option value="$PROJECT_DIR$/mock_server_client.py" />
       </list>
     </option>
   </component>
@@ -314,10 +350,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1721" />
-    <option name="y" value="317" />
-    <option name="width" value="1552" />
-    <option name="height" value="905" />
+    <option name="x" value="-1928" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -395,7 +431,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.asncore">
+  <component name="RunManager" selected="Python.mock_server_client">
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="" />
@@ -561,14 +597,14 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$USER_HOME$/Anaconda2/envs/py27/python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module1/CP_block.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="demo --video-source 1.mp4" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -664,20 +700,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="module1" />
+    <configuration name="mock_server_client" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pythondemo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module1/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mock_server_client.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -705,18 +741,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.app" />
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.eye_app" />
       <item itemvalue="Python.CP_block" />
       <item itemvalue="Python.asncore" />
+      <item itemvalue="Python.mock_server_client" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mock_server_client" />
+        <item itemvalue="Python.CP_block" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python.asncore" />
-        <item itemvalue="Python.CP_block" />
         <item itemvalue="Python.eye_app" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -748,7 +784,14 @@
       <workItem from="1542276440162" duration="108459000" />
       <workItem from="1542852462371" duration="20133000" />
       <workItem from="1542937685501" duration="30106000" />
-      <workItem from="1543196940208" duration="7491000" />
+      <workItem from="1543196940208" duration="10064000" />
+      <workItem from="1543214436910" duration="9000" />
+      <workItem from="1543288632050" duration="4110000" />
+      <workItem from="1543387566539" duration="102000" />
+      <workItem from="1548658078162" duration="9065000" />
+      <workItem from="1548752677595" duration="6301000" />
+      <workItem from="1550030156878" duration="703000" />
+      <workItem from="1550110289899" duration="640000" />
     </task>
     <task id="LOCAL-00001" summary="增加实时显示功能">
       <created>1542703724301</created>
@@ -792,24 +835,31 @@
       <option name="project" value="LOCAL" />
       <updated>1543057285521</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="tcpserver改用asyncore来实现">
+      <created>1543204770414</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543204770414</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196040000" />
+    <option name="totallyTimeSpent" value="219543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19616205" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21108742" />
       <window_info id="Structure" order="1" weight="0.25266525" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298647" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.35796046" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" visible="true" weight="0.39854318" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.39854318" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -825,7 +875,7 @@
       <window_info anchor="right" id="Data View" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="PlantUML" order="6" />
+      <window_info anchor="right" id="PlantUML" order="6" weight="0.32995737" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.32995737" />
       <window_info anchor="right" id="SciView" order="8" weight="0.32995737" />
     </layout>
@@ -871,7 +921,8 @@
     <MESSAGE value="增加格子编号设置功能" />
     <MESSAGE value="增加监控页面" />
     <MESSAGE value="修复标记模式的删除不的标识问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复标记模式的删除不的标识问题" />
+    <MESSAGE value="tcpserver改用asyncore来实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="tcpserver改用asyncore来实现" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -902,34 +953,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module1/c_fp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled/WidgetsDemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled/change_label.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-159">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled/canvas_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/untitled/menu_demo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -999,13 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stdlib/2and3/threading.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Anaconda2/envs/py27/Lib/site-packages/tornado/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -1031,9 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
           <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
-          <folding>
-            <marker date="1542788179653" expanded="true" signature="1967:2184" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1044,23 +1057,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module1/test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module1/utils/app_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6023">
           <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-          <folding>
-            <element signature="e#140#153#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1082,10 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-            <marker date="1542771903976" expanded="true" signature="82:87" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1096,64 +1092,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module1/eye_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding>
-            <marker date="1542939500276" expanded="true" signature="35:40" ph="..." />
-            <marker date="1542939500276" expanded="true" signature="201:206" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module1/cal_occupy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="29" column="92" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module1/cam_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="e#15#26#0" expanded="true" />
-            <marker date="1542944938189" expanded="true" signature="564:691" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module1/web_server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module1/labeling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="33" selection-start-line="33" selection-end-line="51" selection-end-column="52" />
-          <folding>
-            <element signature="e#107#138#0" expanded="true" />
-            <marker date="1543031188035" expanded="true" signature="13336:13582" ph="..." />
-            <marker date="1543031188035" expanded="true" signature="16930:16935" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module1/process_cam_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="88" column="17" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="17" />
-          <folding>
-            <element signature="e#16#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1213,24 +1155,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module1/CP_block.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
-          <folding>
-            <element signature="e#46#62#0" expanded="true" />
-            <marker date="1542278325798" expanded="true" signature="12278:12287" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.IntelliJIdea2018.2/system/python_stubs/2009481889/_socket.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="135" selection-start-line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Anaconda2/envs/py27/Lib/socket.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1240,8 +1164,29 @@
     </entry>
     <entry file="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stdlib/2and3/socket.pyi">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="824">
+        <state relative-caret-position="10735">
           <caret line="566" column="76" selection-start-line="566" selection-start-column="51" selection-end-line="566" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module1/asncore_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module1/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module1/process_cam_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1045">
+          <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -1252,65 +1197,142 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module1/app.py">
+    <entry file="file://$USER_HOME$/Anaconda2/envs/py27/Lib/asyncore.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2185">
+          <caret line="124" column="4" selection-start-line="124" selection-start-column="4" selection-end-line="124" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_PLUGINS_DIR$/python/helpers/typeshed/stdlib/2and3/threading.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3097">
+          <caret line="168" column="12" selection-start-line="168" selection-start-column="12" selection-end-line="168" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda2/envs/py27/Lib/multiprocessing/process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4826">
+          <caret line="257" selection-start-line="257" selection-end-line="257" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module1/labeling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2737">
+          <caret line="349" column="30" lean-forward="true" selection-start-line="349" selection-start-column="30" selection-end-line="359" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module1/tcp_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+            <marker date="1543204698063" expanded="true" signature="551:1096" ph="..." />
+            <marker date="1543204698063" expanded="true" signature="575:580" ph="..." />
+            <marker date="1543204698063" expanded="true" signature="2888:2889" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module1/eye_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module1/cal_occupy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module1/cam_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock_server_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+            <marker date="1548755554451" expanded="true" signature="203:1143" ph="..." />
+            <marker date="1548755554451" expanded="true" signature="203:1326" ph="..." />
+            <marker date="1548755554451" expanded="true" signature="1167:1172" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module1/option.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+          <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
           <folding>
-            <element signature="e#16#30#0" expanded="true" />
-            <marker date="1543204155704" expanded="true" signature="124:880" ph="..." />
-            <marker date="1543204155704" expanded="true" signature="668:673" ph="..." />
-            <marker date="1543204155704" expanded="true" signature="727:729" ph="..." />
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module1/CP_block.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="39" selection-end-column="36" />
+          <folding>
+            <element signature="e#46#62#0" expanded="true" />
+            <marker date="1543301571007" expanded="true" signature="12706:12709" ph="..." />
+            <marker date="1543301571007" expanded="true" signature="13136:13145" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.IntelliJIdea2018.2/system/python_stubs/2009481889/_socket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2679">
+          <caret line="141" column="17" selection-start-line="141" selection-start-column="17" selection-end-line="141" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module1/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module1/movekServicClient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="175" column="78" lean-forward="true" selection-start-line="175" selection-start-column="78" selection-end-line="175" selection-end-column="78" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module1/eye_gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+        <state relative-caret-position="873">
+          <caret line="566" column="28" selection-start-line="566" selection-start-column="28" selection-end-line="566" selection-end-column="28" />
           <folding>
             <element signature="e#15#46#0" expanded="true" />
-            <marker date="1543198920628" expanded="true" signature="682:683" ph="..." />
-            <marker date="1543198920628" expanded="true" signature="682:687" ph="..." />
-            <marker date="1543198920628" expanded="true" signature="2221:2267" ph="..." />
-            <marker date="1543198920628" expanded="true" signature="2395:2404" ph="..." />
-            <marker date="1543198920628" expanded="true" signature="2395:2462" ph="..." />
-            <marker date="1543198920628" expanded="true" signature="3666:3671" ph="..." />
-            <marker date="1543198920628" expanded="true" signature="4216:4268" ph="..." />
-            <marker date="1543198920628" expanded="true" signature="5051:5450" ph="..." />
-            <marker date="1543198920628" expanded="true" signature="5979:22787" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda2/envs/py27/Lib/asyncore.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="420" selection-start-line="420" selection-end-line="420" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module1/asncore_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <marker date="1543204239296" expanded="true" signature="847:896" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module1/tcp_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="35" column="37" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="35" selection-end-column="37" />
-          <folding>
-            <element signature="e#15#30#0" expanded="true" />
-            <marker date="1543204127984" expanded="true" signature="551:1096" ph="..." />
-            <marker date="1543204127984" expanded="true" signature="575:580" ph="..." />
-            <marker date="1543204127984" expanded="true" signature="2888:2889" ph="..." />
+            <marker date="1543212623503" expanded="true" signature="682:683" ph="..." />
+            <marker date="1543212623503" expanded="true" signature="682:687" ph="..." />
+            <marker date="1543212623503" expanded="true" signature="2221:2267" ph="..." />
+            <marker date="1543212623503" expanded="true" signature="2395:2404" ph="..." />
+            <marker date="1543212623503" expanded="true" signature="2395:2462" ph="..." />
+            <marker date="1543212623503" expanded="true" signature="3662:3667" ph="..." />
+            <marker date="1543212623503" expanded="true" signature="4212:4264" ph="..." />
+            <marker date="1543212623503" expanded="true" signature="5047:5447" ph="..." />
+            <marker date="1543212623503" expanded="true" signature="5976:22784" ph="..." />
           </folding>
         </state>
       </provider>

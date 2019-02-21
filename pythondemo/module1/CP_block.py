@@ -35,16 +35,18 @@ class boss():
         data = list_manage()
         lock = threading.Lock()
         self.data = data
-        self.client = HTTPClient('192.168.1.251', 5000)
-        c0 = consume(data, 'c0', lock, self.client)
+        self.client = HTTPClient('192.168.1.251', 7788, self)
+        self.c0 = consume(data, 'c0', lock, self.client)
         p = product(data, 'p', lock)
         # loop_thread = threading.Thread(target=loop, name="Asyncore Loop", args=(self.client, ))
         # # If you want to make the thread a daemon
         # # loop_thread.daemon = True
         # loop_thread.start()
-        c0.start()
-        p.start()
-        self.go()
+        self.c0.start()
+        thread = PutDataThread(data, 'p', lock)
+        thread.start()
+        thread.join()
+        # self.go()
 
     def go(self):
         while True:
@@ -53,9 +55,14 @@ class boss():
             # self.data.# print()
             # print('boss check , ',self.data.show())
 
+    def retry_connect(self):
+        print "retry connection !!!!!!!!!!!!!"
+        self.client = HTTPClient('192.168.1.251', 7788, self)
+        self.c0.set_client(self.client)
+
 
 class HTTPClient(asyncore.dispatcher):
-    def __init__(self, host, port):
+    def __init__(self, host, port, boss):
         asyncore.dispatcher.__init__(self)
         print ' w ', image_width, ' h ', image_height
 
@@ -65,6 +72,8 @@ class HTTPClient(asyncore.dispatcher):
         self.connect((host, port))
         self.buffer = Queue.Queue()
         self.receive_buffer = Queue.Queue()
+        self.boss = boss
+
 
         # self.buffer = 'GET %s HTTP/1.0\r\n\r\n' % "a"
 
@@ -80,10 +89,12 @@ class HTTPClient(asyncore.dispatcher):
 
     def handle_error(self):
         print "error!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-        self.initate_connection_with_server()
+        #self.initate_connection_with_server()
 
     def handle_close(self):
         self.close()
+        print "conection close!!!!!"
+        threading.Timer(1, self.boss.retry_connect).start()
 
     def back_save(self, s, index, value, w):
         for i in range(7):
@@ -232,6 +243,9 @@ class consume(threading.Thread):
             self.lock.release()
             print 'release lock'
 
+    def set_client(self, client):
+        self.client = client
+
 
 class product(threading.Thread):
     def __init__(self, data, id, lock):
@@ -288,6 +302,7 @@ class product(threading.Thread):
         stopflag = False
         count = 0
         while not stopflag:
+
             # read frame
             idx += 1
             ret_val, img = cam.read()
@@ -375,6 +390,22 @@ class product(threading.Thread):
         self.run_demo(args, mirror=False)
 
 
+class PutDataThread(threading.Thread):
+    def __init__(self, data, id, lock):
+        threading.Thread.__init__(self)
+        self.id = id
+        self.data = data
+        self.lock = lock
+
+    def run(self):
+        while True:
+            self.lock.acquire()
+            self.data.add(bytes("hello!"))
+            self.lock.release()
+            time.sleep(1)
+            print "1****"
+
+
 class list_manage():
     def __init__(self):
         self.pool = []
@@ -443,3 +474,4 @@ if __name__ == '__main__':
     img_count = 0
     p = Process(target=boss, args=())
     p.start()
+    p.join()
