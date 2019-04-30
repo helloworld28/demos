@@ -1,0 +1,19 @@
+@startuml
+sqlSession -> configuration: getMappedStatement(id)
+sqlSession -> CachingExecutor: query(MappedStatement)
+
+CachingExecutor -> BaseExecutor: createCacheKey
+CachingExecutor -> CachingExecutor: getCache
+CachingExecutor -> BaseExecutor: query
+BaseExecutor -> SimpleExecutor: doQuery
+SimpleExecutor -> configuration: newStatementHandler
+configuration -> interceptorChain: pluginAll
+configuration <-- interceptorChain: StatementHandler
+SimpleExecutor <-- configuration: RoutingStatementHandler
+SimpleExecutor -> BaseExecutor: getConnection
+SimpleExecutor -> StatementHandler: prepare
+SimpleExecutor -> PreparedStatementHandler: query
+PreparedStatementHandler -> DefaultResultSetHandler: handleResultSets
+
+
+@enduml
